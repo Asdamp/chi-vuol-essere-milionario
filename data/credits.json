@@ -1,0 +1,77 @@
+{
+  "nota": "I file originali del programma TV non sono usati. Solo audio royalty-free/CC0, più due brani CC-BY con credito obbligatorio.",
+  "voci": [
+    {
+      "uso": "intro",
+      "file": "assets/audio/intro.mp3",
+      "titolo": "Happy Happy Game Show",
+      "autore": "Kevin MacLeod",
+      "fonte": "incompetech.com",
+      "licenza": "CC BY 4.0",
+      "licenzaUrl": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "uso": "suspense",
+      "file": "assets/audio/suspense.mp3",
+      "titolo": "Final Count",
+      "autore": "Kevin MacLeod",
+      "fonte": "incompetech.com",
+      "licenza": "CC BY 4.0",
+      "licenzaUrl": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "uso": "conferma",
+      "file": "assets/audio/conferma.mp3",
+      "titolo": "Interface Sounds (confirmation_001)",
+      "autore": "Kenney",
+      "fonte": "kenney.nl",
+      "licenza": "CC0 1.0",
+      "licenzaUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    {
+      "uso": "errata",
+      "file": "assets/audio/errata.mp3",
+      "titolo": "Interface Sounds (error_001)",
+      "autore": "Kenney",
+      "fonte": "kenney.nl",
+      "licenza": "CC0 1.0",
+      "licenzaUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    {
+      "uso": "aiuto",
+      "file": "assets/audio/aiuto.mp3",
+      "titolo": "Interface Sounds (question_001)",
+      "autore": "Kenney",
+      "fonte": "kenney.nl",
+      "licenza": "CC0 1.0",
+      "licenzaUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    {
+      "uso": "game-over",
+      "file": "assets/audio/game-over.mp3",
+      "titolo": "Music Jingles (jingles_HIT00)",
+      "autore": "Kenney",
+      "fonte": "kenney.nl",
+      "licenza": "CC0 1.0",
+      "licenzaUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    {
+      "uso": "corretta",
+      "file": "assets/audio/corretta.mp3",
+      "titolo": "Win sound effect",
+      "autore": "Listener",
+      "fonte": "opengameart.org",
+      "licenza": "CC0",
+      "licenzaUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    {
+      "uso": "vittoria",
+      "file": "assets/audio/vittoria.mp3",
+      "titolo": "Win sound effect",
+      "autore": "Listener",
+      "fonte": "opengameart.org",
+      "licenza": "CC0",
+      "licenzaUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+    }
+  ]
+}
