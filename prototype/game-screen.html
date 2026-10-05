@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<!--
+  PROTOTIPO (usa e getta) — ticket #2 "Prototipo visivo: schermata studio e scala premi".
+  Tre varianti radicalmente diverse della schermata di gioco, switchabili con ?variant=A|B|C
+  e con la barra flottante in basso. ?state= mostra gli stati chiave (normale, 50:50, corretta,
+  errata, fine). NON è codice di produzione: niente audio, niente persistenza, niente logica reale.
+-->
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prototipo schermata — Chi vuol essere Milionario? I Grandi Numeri</title>
+<style>
+  :root { --gold:#f5c542; --deep:#0b1030; }
+  * { box-sizing: border-box; }
+  html, body { margin:0; height:100%; font-family: "Trebuchet MS", Verdana, system-ui, sans-serif; }
+  body { overflow-x:hidden; }
+  #app { min-height:100vh; }
+  .hidden { display:none !important; }
+
+  /* ---------- Floating prototype switcher ---------- */
+  #switcher {
+    position:fixed; left:50%; bottom:14px; transform:translateX(-50%);
+    display:flex; align-items:center; gap:10px; z-index:9999;
+    background:#111; color:#fff; border:1px solid #444; border-radius:999px;
+    padding:8px 12px; box-shadow:0 6px 24px rgba(0,0,0,.5); font-size:14px;
+  }
+  #switcher button {
+    background:#333; color:#fff; border:1px solid #555; border-radius:8px;
+    padding:5px 10px; cursor:pointer; font-size:13px;
+  }
+  #switcher button.active { background:var(--gold); color:#111; border-color:var(--gold); font-weight:bold; }
+  #switcher .label { min-width:210px; text-align:center; font-weight:bold; }
+  #switcher .states { display:flex; gap:4px; border-left:1px solid #444; padding-left:10px; }
+
+  /* =========================================================
+     VARIANT A — "Studio fedele" (scuro, spot, risposte a losanga)
+     ========================================================= */
+  .A { position:relative; min-height:100vh; color:#fff;
+    background:
+      radial-gradient(60% 55% at 50% 0%, rgba(90,120,255,.35), transparent 70%),
+      radial-gradient(50% 60% at 15% 90%, rgba(120,60,220,.35), transparent 70%),
+      radial-gradient(50% 60% at 85% 90%, rgba(20,140,200,.30), transparent 70%),
+      linear-gradient(180deg,#070a22,#0b1030 45%,#05071a);
+  }
+  .A::before { content:""; position:absolute; inset:0; pointer-events:none;
+    background: conic-gradient(from 180deg at 50% -10%, transparent 0 8%, rgba(255,255,255,.05) 8% 10%, transparent 10% 20%, rgba(255,255,255,.04) 20% 22%, transparent 22% 100%);
+    mix-blend-mode:screen; }
+  .A .lifelines { display:flex; gap:18px; justify-content:center; padding:22px 0 8px; position:relative; }
+  .A .life { width:66px; height:66px; border-radius:50%;
+    background:radial-gradient(circle at 35% 30%, #3a4bb5, #131a4a);
+    border:2px solid #6d7cff; display:grid; place-items:center; font-weight:bold; font-size:13px;
+    text-align:center; line-height:1.05; cursor:pointer; box-shadow:0 0 18px rgba(109,124,255,.4); }
+  .A .life.used { opacity:.28; filter:grayscale(1); }
+  .A .stage { display:grid; grid-template-columns: 1fr 320px; gap:26px; max-width:1200px; margin:0 auto; padding:10px 26px 90px; }
+  .A .question { background:linear-gradient(180deg,#121a4e,#0a0f36); border:2px solid #6d7cff; border-radius:14px;
+    padding:22px 26px; font-size:clamp(18px,2.1vw,28px); text-align:center; box-shadow:0 0 30px rgba(80,110,255,.25); }
+  .A .question .tag { display:block; font-size:13px; color:#9fb0ff; letter-spacing:.12em; text-transform:uppercase; margin-bottom:8px; }
+  .A .answers { display:flex; flex-direction:column; gap:14px; margin-top:26px; }
+  .A .ans { position:relative; display:flex; align-items:center; gap:16px; cursor:pointer;
+    background:linear-gradient(180deg,#101740,#0a0f33); border:2px solid #5566cc;
+    padding:16px 26px; color:#fff; font-size:clamp(16px,1.7vw,22px);
+    clip-path: polygon(3.5% 0, 96.5% 0, 100% 50%, 96.5% 100%, 3.5% 100%, 0 50%);
+    transition:filter .15s, opacity .15s; }
+  .A .ans .letter { color:var(--gold); font-weight:bold; font-size:1.25em; min-width:1.4em; }
+  .A .ans:hover { filter:brightness(1.25); }
+  .A .ans.eliminated { opacity:.18; filter:grayscale(1); }
+  .A .ans.correct { background:linear-gradient(180deg,#0f7a3a,#075c2b); border-color:#37e07a; box-shadow:0 0 26px rgba(55,224,122,.55); }
+  .A .ans.wrong { background:linear-gradient(180deg,#8a1220,#5c0a15); border-color:#ff5b6e; }
+  .A .ladder { align-self:start; background:linear-gradient(180deg,#0d1440,#080c2b);
+    border:2px solid #3a49a8; border-radius:14px; padding:14px; }
+  .A .ladder h3 { margin:2px 0 10px; text-align:center; color:#9fb0ff; font-size:14px; letter-spacing:.1em; text-transform:uppercase; }
+  .A .row { display:flex; justify-content:space-between; padding:4px 12px; border-radius:8px; font-size:15px; color:#c7d0ff; }
+  .A .row .lvl { color:#7d8bdd; }
+  .A .row.safe { color:var(--gold); font-weight:bold; }
+  .A .row.current { background:var(--gold); color:#111; font-weight:bold; }
+  .A .row.current .lvl { color:#4a3a00; }
+  .A .overlay { position:fixed; inset:0; background:rgba(4,6,20,.9); display:grid; place-items:center; z-index:500; }
+  .A .panel { background:linear-gradient(180deg,#121a4e,#0a0f36); border:2px solid var(--gold); border-radius:16px;
+    padding:34px 40px; max-width:680px; text-align:center; box-shadow:0 0 50px rgba(245,197,66,.3); }
+  .A .panel h2 { margin:0 0 6px; font-size:34px; color:var(--gold); }
+  .A .panel .prize { font-size:44px; font-weight:bold; margin:8px 0 14px; }
+  .A .panel .why { color:#c7d0ff; font-size:18px; line-height:1.5; }
+  .A .panel button { margin-top:20px; background:var(--gold); border:0; border-radius:10px; padding:12px 26px; font-size:18px; font-weight:bold; cursor:pointer; }
+
+  /* =========================================================
+     VARIANT B — "Arcade bambini" (chiaro, giocoso, traguardo orizzontale)
+     ========================================================= */
+  .B { min-height:100vh; color:#231a3a;
+    background:linear-gradient(160deg,#ffd86b 0%,#ff9ec4 40%,#8ad4ff 100%);
+    padding:18px 22px 96px; }
+  .B .track { max-width:1100px; margin:0 auto; display:flex; align-items:center; gap:6px;
+    background:rgba(255,255,255,.65); border-radius:18px; padding:10px 14px; box-shadow:0 6px 0 rgba(0,0,0,.12); overflow-x:auto; }
+  .B .dot { flex:0 0 auto; width:44px; height:44px; border-radius:50%; background:#fff; border:3px solid #b9a7ff;
+    display:grid; place-items:center; font-weight:bold; font-size:12px; color:#5a4a9a; }
+  .B .dot.safe { border-color:#ff9d00; background:#fff3d6; color:#a35b00; }
+  .B .dot.current { background:#5a2fd6; color:#fff; border-color:#5a2fd6; transform:scale(1.25); box-shadow:0 0 0 6px rgba(90,47,214,.25); }
+  .B .main { max-width:1100px; margin:22px auto 0; display:grid; grid-template-columns:1fr; gap:18px; }
+  .B .qcard { background:#fff; border-radius:26px; padding:30px 34px; box-shadow:0 12px 0 rgba(90,47,214,.25);
+    font-size:clamp(20px,2.4vw,34px); font-weight:bold; text-align:center; }
+  .B .qcard .tag { display:inline-block; background:#efe6ff; color:#6a3fd6; border-radius:999px;
+    padding:4px 14px; font-size:14px; margin-bottom:14px; letter-spacing:.05em; }
+  .B .grid { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+  .B .tile { display:flex; align-items:center; gap:14px; cursor:pointer; border:none; text-align:left;
+    border-radius:22px; padding:22px 24px; font-size:clamp(18px,2vw,26px); font-weight:bold; color:#231a3a;
+    box-shadow:0 8px 0 rgba(0,0,0,.18); transition:transform .1s; }
+  .B .tile:hover { transform:translateY(-2px); }
+  .B .tile .letter { width:46px; height:46px; border-radius:50%; background:rgba(255,255,255,.75);
+    display:grid; place-items:center; font-size:22px; flex:0 0 auto; }
+  .B .tile:nth-child(1){ background:#9be7a4; } .B .tile:nth-child(2){ background:#ffd06b; }
+  .B .tile:nth-child(3){ background:#a9c7ff; } .B .tile:nth-child(4){ background:#ffb0c8; }
+  .B .tile.eliminated { opacity:.25; filter:grayscale(.7); box-shadow:none; }
+  .B .tile.correct { background:#3ed17a !important; color:#04331a; box-shadow:0 0 0 6px rgba(62,209,122,.35),0 8px 0 rgba(0,0,0,.18); }
+  .B .tile.wrong { background:#ff6b6b !important; color:#3a0000; }
+  .B .helpers { display:flex; gap:14px; justify-content:center; margin-top:6px; }
+  .B .help { border:none; cursor:pointer; background:#fff; border-radius:16px; padding:14px 22px;
+    font-size:16px; font-weight:bold; color:#5a2fd6; box-shadow:0 6px 0 rgba(90,47,214,.35); }
+  .B .help.used { opacity:.35; box-shadow:none; }
+  .B .overlay { position:fixed; inset:0; background:rgba(60,20,120,.72); display:grid; place-items:center; z-index:500; padding:20px; }
+  .B .panel { background:#fff; border-radius:28px; padding:36px 40px; max-width:640px; text-align:center; box-shadow:0 16px 0 rgba(0,0,0,.2); }
+  .B .panel h2 { margin:0; font-size:38px; color:#5a2fd6; }
+  .B .panel .prize { font-size:46px; font-weight:bold; margin:10px 0; color:#ff9d00; }
+  .B .panel .why { font-size:18px; line-height:1.5; }
+  .B .panel button { margin-top:20px; border:none; border-radius:999px; padding:14px 30px; font-size:18px; font-weight:bold;
+    background:#5a2fd6; color:#fff; cursor:pointer; }
+
+  /* =========================================================
+     VARIANT C — "Proiettore essenziale" (chiaro, contrasto alto, LIM)
+     ========================================================= */
+  .C { min-height:100vh; background:#f7f7f2; color:#111; padding:16px 20px 96px; }
+  .C .top { max-width:1500px; margin:0 auto; display:flex; justify-content:space-between; align-items:center; gap:20px; }
+  .C .brand { font-weight:bold; font-size:18px; letter-spacing:.02em; color:#111; }
+  .C .brand small { display:block; font-weight:normal; color:#666; letter-spacing:.14em; text-transform:uppercase; font-size:11px; }
+  .C .helpers { display:flex; gap:10px; }
+  .C .help { border:2px solid #111; background:#fff; border-radius:10px; padding:10px 16px; font-size:15px; font-weight:bold; cursor:pointer; }
+  .C .help.used { opacity:.3; }
+  .C .layout { max-width:1500px; margin:20px auto 0; display:grid; grid-template-columns:150px 1fr; gap:34px; }
+  .C .rail { border-right:2px solid #ddd; padding-right:18px; }
+  .C .rail h3 { font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:#888; margin:0 0 10px; }
+  .C .r { display:flex; justify-content:space-between; font-size:15px; padding:3px 0; color:#444; }
+  .C .r.safe { color:#a35b00; font-weight:bold; }
+  .C .r.current { background:#111; color:#fff; border-radius:6px; padding:3px 8px; font-weight:bold; }
+  .C .q { font-size:clamp(26px,3.4vw,52px); line-height:1.2; font-weight:800; margin:6px 0 26px; }
+  .C .q .num { font-variant-numeric: tabular-nums; letter-spacing:.01em; }
+  .C .grid { display:grid; grid-template-columns:1fr 1fr; gap:18px; }
+  .C .ans { display:flex; align-items:center; gap:18px; cursor:pointer; background:#fff; border:3px solid #111;
+    border-radius:14px; padding:20px 24px; font-size:clamp(20px,2.2vw,30px); font-weight:600; transition:background .12s; }
+  .C .ans:hover { background:#fffbe8; }
+  .C .ans .letter { width:54px; height:54px; border-radius:50%; border:3px solid #111; display:grid; place-items:center;
+    font-weight:800; font-size:24px; flex:0 0 auto; }
+  .C .ans.eliminated { opacity:.2; filter:grayscale(1); }
+  .C .ans.correct { background:#c8f7d4; border-color:#0a7a35; }
+  .C .ans.correct .letter { border-color:#0a7a35; color:#0a7a35; }
+  .C .ans.wrong { background:#ffd6d6; border-color:#b00020; }
+  .C .ans.wrong .letter { border-color:#b00020; color:#b00020; }
+  .C .overlay { position:fixed; inset:0; background:rgba(247,247,242,.96); display:grid; place-items:center; z-index:500; padding:20px; }
+  .C .panel { border:4px solid #111; border-radius:18px; background:#fff; padding:40px 46px; max-width:760px; text-align:center; }
+  .C .panel h2 { margin:0; font-size:42px; }
+  .C .panel .prize { font-size:56px; font-weight:800; margin:12px 0; }
+  .C .panel .why { font-size:20px; line-height:1.55; color:#333; }
+  .C .panel button { margin-top:22px; border:none; border-radius:12px; padding:14px 32px; font-size:20px; font-weight:bold;
+    background:#111; color:#fff; cursor:pointer; }
+</style>
+</head>
+<body>
+<div id="app"></div>
+
+<div id="switcher">
+  <button id="prev" title="Variante precedente">◀</button>
+  <span class="label" id="vlabel">A</span>
+  <button id="next" title="Variante successiva">▶</button>
+  <span class="states">
+    <button data-state="normal">Normale</button>
+    <button data-state="fifty">50:50</button>
+    <button data-state="correct">Corretta</button>
+    <button data-state="wrong">Errata</button>
+    <button data-state="end">Fine</button>
+  </span>
+</div>
+
+<script>
+const LADDER = [100,200,300,500,1000,2000,4000,8000,16000,32000,64000,125000,250000,500000,1000000];
+const SAFE = new Set([5,10]);
+const CURRENT = 6;
+const QUESTION = "Nel numero 18.500.170, a quale valore corrisponde la cifra 5?";
+const OPTIONS = ["50.000","500.000","5.000.000","5.000"];
+const CORRECT = 1;      // indice 1 => 500.000
+const WHY = "La cifra 5 occupa la marca hk (centinaia di migliaia): il suo valore è 500.000.";
+const EUR = n => "€ " + n.toLocaleString("it-IT");
+
+function ladderRows(cls){
+  return LADDER.map((v,i)=>{
+    const lvl = i+1;
+    const c = [lvl===CURRENT?"current":"", SAFE.has(lvl)?"safe":""].filter(Boolean).join(" ");
+    return `<div class="${cls} ${c}"><span class="lvl">${lvl}</span><span>${EUR(v)}</span></div>`;
+  }).reverse().join("");
+}
+function answerState(i, state){
+  if(state==="fifty" && (i===0||i===2)) return "eliminated";
+  if(state==="correct" && i===CORRECT) return "correct";
+  if(state==="wrong"){ if(i===CORRECT) return "correct"; if(i===0) return "wrong"; }
+  return "";
+}
+function overlay(state, theme){
+  if(state!=="end") return "";
+  return `<div class="overlay"><div class="panel">
+    <h2>Partita finita</h2>
+    <div class="prize">${EUR(1000)}</div>
+    <p class="why">Ti fermi al traguardo del livello 5. ${WHY}</p>
+    <button>Rigioca</button>
+  </div></div>`;
+}
+
+function variantA(state){
+  const lives = ["50:50","Pubblico","Casa"].map((t,i)=>`<div class="life ${state==="fifty"&&i===0?"used":""}">${t}</div>`).join("");
+  const ans = OPTIONS.map((o,i)=>{
+    const st = answerState(i,state);
+    return `<div class="ans ${st}"><span class="letter">${"ABCD"[i]}</span><span>${o}</span></div>`;
+  }).join("");
+  return `<div class="A">
+    <div class="lifelines">${lives}</div>
+    <div class="stage">
+      <div>
+        <div class="question"><span class="tag">Livello ${CURRENT} · Tipologia B</span>${QUESTION}</div>
+        <div class="answers">${ans}</div>
+      </div>
+      <div class="ladder"><h3>Scala premi</h3>${ladderRows("row")}</div>
+    </div>
+    ${overlay(state)}
+  </div>`;
+}
+
+function variantB(state){
+  const dots = LADDER.map((v,i)=>{
+    const lvl=i+1; const c=[lvl===CURRENT?"current":"", SAFE.has(lvl)?"safe":""].filter(Boolean).join(" ");
+    return `<div class="dot ${c}">${lvl}</div>`;
+  }).join("");
+  const tiles = OPTIONS.map((o,i)=>{
+    const st = answerState(i,state);
+    return `<button class="tile ${st}"><span class="letter">${"ABCD"[i]}</span><span>${o}</span></button>`;
+  }).join("");
+  const helpers = ["50:50","Pubblico","Chiama un compagno"].map((t,i)=>`<button class="help ${state==="fifty"&&i===0?"used":""}">${t}</button>`).join("");
+  return `<div class="B">
+    <div class="track">${dots}</div>
+    <div class="main">
+      <div class="qcard"><span class="tag">Livello ${CURRENT} · Tipologia B</span><div>${QUESTION}</div></div>
+      <div class="grid">${tiles}</div>
+      <div class="helpers">${helpers}</div>
+    </div>
+    ${overlay(state)}
+  </div>`;
+}
+
+function variantC(state){
+  const rail = LADDER.map((v,i)=>{
+    const lvl=i+1; const c=[lvl===CURRENT?"current":"", SAFE.has(lvl)?"safe":""].filter(Boolean).join(" ");
+    return `<div class="r ${c}"><span>${lvl}</span><span>${EUR(v)}</span></div>`;
+  }).reverse().join("");
+  const ans = OPTIONS.map((o,i)=>{
+    const st = answerState(i,state);
+    return `<div class="ans ${st}"><span class="letter">${"ABCD"[i]}</span><span>${o}</span></div>`;
+  }).join("");
+  const helpers = ["50:50","Pubblico","Chiamata a casa"].map((t,i)=>`<button class="help ${state==="fifty"&&i===0?"used":""}">${t}</button>`).join("");
+  return `<div class="C">
+    <div class="top">
+      <div class="brand">I GRANDI NUMERI<small>Chi vuol essere Milionario?</small></div>
+      <div class="helpers">${helpers}</div>
+    </div>
+    <div class="layout">
+      <div class="rail"><h3>Premi</h3>${rail}</div>
+      <div>
+        <div class="q"><span class="num">${QUESTION}</span></div>
+        <div class="grid">${ans}</div>
+      </div>
+    </div>
+    ${overlay(state)}
+  </div>`;
+}
+
+const VARIANTS = { A:["Studio fedele",variantA], B:["Arcade bambini",variantB], C:["Proiettore essenziale",variantC] };
+const KEYS = ["A","B","C"];
+
+function render(){
+  const p = new URLSearchParams(location.search);
+  const v = KEYS.includes(p.get("variant")) ? p.get("variant") : "A";
+  const state = ["normal","fifty","correct","wrong","end"].includes(p.get("state")) ? p.get("state") : "normal";
+  document.getElementById("app").innerHTML = VARIANTS[v][1](state);
+  document.getElementById("vlabel").textContent = v + " (" + VARIANTS[v][0] + ")";
+  document.querySelectorAll("#switcher [data-state]").forEach(b=>b.classList.toggle("active", b.dataset.state===state));
+}
+function go(delta){
+  const p = new URLSearchParams(location.search);
+  const cur = KEYS.indexOf(p.get("variant")||"A");
+  const nxt = KEYS[(cur + delta + KEYS.length) % KEYS.length];
+  p.set("variant", nxt);
+  history.replaceState(null,"","?"+p.toString());
+  render();
+}
+document.getElementById("prev").onclick = ()=>go(-1);
+document.getElementById("next").onclick = ()=>go(1);
+document.querySelectorAll("#switcher [data-state]").forEach(b=>b.onclick=()=>{
+  const p = new URLSearchParams(location.search); p.set("state", b.dataset.state);
+  history.replaceState(null,"","?"+p.toString()); render();
+});
+document.addEventListener("keydown", e=>{
+  const t = e.target;
+  if(t && (t.tagName==="INPUT"||t.tagName==="TEXTAREA"||t.isContentEditable)) return;
+  if(e.key==="ArrowLeft") go(-1);
+  if(e.key==="ArrowRight") go(1);
+});
+render();
+</script>
+</body>
+</html>
