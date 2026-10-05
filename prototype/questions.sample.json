@@ -1,0 +1,605 @@
+{
+  "schemaVersione": 1,
+  "domande": [
+    {
+      "id": "L02-A-001",
+      "livello": 2,
+      "tipologia": "A",
+      "fascia": "migliaia",
+      "numero": 4706,
+      "marche": [
+        "uk",
+        "h",
+        "u"
+      ],
+      "testo": "Nel numero 4.706, quale marca occupa la cifra 4?",
+      "opzioni": [
+        "Unità (u)",
+        "Decine (da)",
+        "Centinaia (h)",
+        "Unità di migliaia (uk)"
+      ],
+      "corretta": 3,
+      "hint": "Il 4 è la prima cifra a sinistra: apre il gruppo delle migliaia.",
+      "audience": [
+        5,
+        5,
+        10,
+        80
+      ],
+      "spiegazione": "La cifra 4 è nella posizione delle unità di migliaia (uk), perché il gruppo delle migliaia è quello più a sinistra in 4.706."
+    },
+    {
+      "id": "L06-A-002",
+      "livello": 6,
+      "tipologia": "A",
+      "fascia": "milioni",
+      "numero": 18500170,
+      "marche": [
+        "daM",
+        "uM",
+        "hk",
+        "h",
+        "da"
+      ],
+      "testo": "Nel numero 18.500.170, quale marca occupa la cifra 5?",
+      "opzioni": [
+        "Unità di migliaia (uk)",
+        "Decine di migliaia (dak)",
+        "Centinaia di migliaia (hk)",
+        "Unità di milione (uM)"
+      ],
+      "corretta": 2,
+      "hint": "Guarda la terza posizione del gruppo delle migliaia: hk.",
+      "audience": [
+        8,
+        15,
+        68,
+        9
+      ],
+      "spiegazione": "Il 5 è nella terza posizione del gruppo delle migliaia, cioè le centinaia di migliaia (hk)."
+    },
+    {
+      "id": "L12-A-003",
+      "livello": 12,
+      "tipologia": "A",
+      "fascia": "miliardi",
+      "numero": 901002500,
+      "marche": [
+        "hM",
+        "uM",
+        "uk",
+        "h"
+      ],
+      "testo": "Nel numero 901.002.500, quale marca occupa la cifra 9?",
+      "opzioni": [
+        "Centinaia di migliaia (hk)",
+        "Unità di milione (uM)",
+        "Decine di milioni (daM)",
+        "Centinaia di milioni (hM)"
+      ],
+      "corretta": 3,
+      "hint": "Il 9 è la prima cifra del gruppo dei milioni, la più a sinistra: hM.",
+      "audience": [
+        10,
+        12,
+        10,
+        68
+      ],
+      "spiegazione": "Il 9 apre il gruppo dei milioni ed è la terza posizione, cioè le centinaia di milioni (hM)."
+    },
+    {
+      "id": "L03-B-001",
+      "livello": 3,
+      "tipologia": "B",
+      "fascia": "migliaia",
+      "numero": 4706,
+      "marche": [
+        "h"
+      ],
+      "testo": "Nel numero 4.706, a quale valore corrisponde la cifra 7?",
+      "opzioni": [
+        "70",
+        "700",
+        "7.000",
+        "7"
+      ],
+      "corretta": 1,
+      "hint": "Il 7 è nella posizione delle centinaia (h): moltiplica per 100.",
+      "audience": [
+        12,
+        72,
+        10,
+        6
+      ],
+      "spiegazione": "Il 7 occupa la marca h (centinaia), quindi vale 7 × 100 = 700."
+    },
+    {
+      "id": "L07-B-002",
+      "livello": 7,
+      "tipologia": "B",
+      "fascia": "milioni",
+      "numero": 18500170,
+      "marche": [
+        "hk"
+      ],
+      "testo": "Nel numero 18.500.170, a quale valore corrisponde la cifra 5?",
+      "opzioni": [
+        "50.000",
+        "500.000",
+        "5.000.000",
+        "5.000"
+      ],
+      "corretta": 1,
+      "hint": "La cifra 5 sta nella marca hk: moltiplica per 100.000.",
+      "audience": [
+        15,
+        70,
+        10,
+        5
+      ],
+      "spiegazione": "Il 5 occupa hk (centinaia di migliaia), quindi vale 5 × 100.000 = 500.000."
+    },
+    {
+      "id": "L13-B-003",
+      "livello": 13,
+      "tipologia": "B",
+      "fascia": "miliardi",
+      "numero": 901002500,
+      "marche": [
+        "hM"
+      ],
+      "testo": "Nel numero 901.002.500, a quale valore corrisponde la cifra 9?",
+      "opzioni": [
+        "90.000.000",
+        "900.000.000",
+        "9.000.000",
+        "900.000"
+      ],
+      "corretta": 1,
+      "hint": "Il 9 è in hM: moltiplica per 100.000.000.",
+      "audience": [
+        18,
+        66,
+        10,
+        6
+      ],
+      "spiegazione": "Il 9 occupa hM (centinaia di milioni), quindi vale 9 × 100.000.000 = 900.000.000."
+    },
+    {
+      "id": "L04-C-001",
+      "livello": 4,
+      "tipologia": "C",
+      "fascia": "migliaia",
+      "numero": 4706,
+      "marche": [
+        "uk",
+        "h",
+        "u"
+      ],
+      "testo": "Qual è la scomposizione per marche del numero 4.706?",
+      "opzioni": [
+        "4 uk + 7 h + 6 u",
+        "4 h + 7 da + 6 u",
+        "4 uk + 7 da + 6 u",
+        "4 uM + 7 h + 6 u"
+      ],
+      "corretta": 0,
+      "hint": "Separa le cifre per marca, senza saltare la decina che qui vale 0.",
+      "audience": [
+        65,
+        12,
+        15,
+        8
+      ],
+      "spiegazione": "4.706 = 4 migliaia (uk) + 7 centinaia (h) + 6 unità (u); la decina è 0 e non si scrive."
+    },
+    {
+      "id": "L08-C-002",
+      "livello": 8,
+      "tipologia": "C",
+      "fascia": "milioni",
+      "numero": 18500170,
+      "marche": [
+        "daM",
+        "uM",
+        "hk",
+        "h",
+        "da"
+      ],
+      "testo": "Qual è la scomposizione per marche del numero 18.500.170?",
+      "opzioni": [
+        "1 uM + 8 daM + 5 hk + 1 h + 7 da",
+        "1 daM + 8 uM + 5 hk + 1 h + 7 da",
+        "1 daM + 8 uM + 5 dak + 1 h + 7 da",
+        "1 daM + 8 uM + 5 hk + 1 da + 7 u"
+      ],
+      "corretta": 1,
+      "hint": "18 milioni sono 1 decina di milione e 8 unità di milione.",
+      "audience": [
+        10,
+        64,
+        16,
+        10
+      ],
+      "spiegazione": "18.500.170 = 1 daM + 8 uM + 5 hk + 1 h + 7 da."
+    },
+    {
+      "id": "L14-C-003",
+      "livello": 14,
+      "tipologia": "C",
+      "fascia": "miliardi",
+      "numero": 4020000050,
+      "marche": [
+        "uG",
+        "daM",
+        "da"
+      ],
+      "testo": "Qual è la scomposizione per marche del numero 4.020.000.050?",
+      "opzioni": [
+        "4 uG + 2 daM + 5 da",
+        "4 uG + 2 hM + 5 da",
+        "4 daG + 2 uM + 5 da",
+        "4 uG + 2 daM + 5 h"
+      ],
+      "corretta": 0,
+      "hint": "Attenzione agli zeri interni: 20 milioni sono 2 decine di milione (daM).",
+      "audience": [
+        58,
+        14,
+        16,
+        12
+      ],
+      "spiegazione": "4.020.000.050 = 4 uG + 2 daM + 5 da; le posizioni vuote (hM, uM, uk, dak, hk, h) valgono 0."
+    },
+    {
+      "id": "L05-D-001",
+      "livello": 5,
+      "tipologia": "D",
+      "fascia": "migliaia",
+      "numero": 998500,
+      "marche": [
+        "hk",
+        "dak",
+        "uk",
+        "h"
+      ],
+      "testo": "Come si scrive in lettere il numero 998.500?",
+      "opzioni": [
+        "novecentonovantottomilacinquecento",
+        "novecentonovantottomilacinquemila",
+        "novecentonovantacinquemilacinquecento",
+        "novecentonovantottomilioni cinquecento"
+      ],
+      "corretta": 0,
+      "hint": "Mille si dice 'mila': 998.000 è 'novecentonovantottomila'.",
+      "audience": [
+        62,
+        16,
+        14,
+        8
+      ],
+      "spiegazione": "998.500 = novecentonovantottomila (998.000) + cinquecento (500) = novecentonovantottomilacinquecento."
+    },
+    {
+      "id": "L09-D-002",
+      "livello": 9,
+      "tipologia": "D",
+      "fascia": "miliardi",
+      "numero": 4002000050,
+      "marche": [
+        "uG",
+        "uM",
+        "da"
+      ],
+      "testo": "Scrivi in cifre: 'quattro miliardi due milioni cinquanta'.",
+      "opzioni": [
+        "4.002.000.050",
+        "4.200.000.050",
+        "4.002.000.500",
+        "4.020.000.050"
+      ],
+      "corretta": 0,
+      "hint": "Due milioni va nel gruppo dei milioni come 2, non 20; poi 50 sono 5 decine.",
+      "audience": [
+        64,
+        12,
+        14,
+        10
+      ],
+      "spiegazione": "Quattro miliardi (4.000.000.000) + due milioni (2.000.000) + cinquanta (50) = 4.002.000.050."
+    },
+    {
+      "id": "L15-D-003",
+      "livello": 15,
+      "tipologia": "D",
+      "fascia": "milioni",
+      "numero": 18500170,
+      "marche": [
+        "daM",
+        "uM",
+        "hk",
+        "h",
+        "da"
+      ],
+      "testo": "Come si scrive in lettere il numero 18.500.170?",
+      "opzioni": [
+        "diciotto milioni cinquecentomilasettanta",
+        "diciotto milioni cinquecentomilacentosettanta",
+        "diciotto milioni cinquemilacentosettanta",
+        "diciassette milioni cinquecentomilacentosettanta"
+      ],
+      "corretta": 1,
+      "hint": "Dentro il gruppo delle migliaia, 500 e 100 si leggono 'cinquecentomilacento'.",
+      "audience": [
+        10,
+        66,
+        14,
+        10
+      ],
+      "spiegazione": "18.500.170 = diciotto milioni + cinquecentomila + cento + settanta = diciotto milioni cinquecentomilacentosettanta."
+    },
+    {
+      "id": "L07-E-001",
+      "livello": 7,
+      "tipologia": "E",
+      "fascia": "milioni",
+      "numero": 18500170,
+      "marche": [
+        "daM",
+        "uM",
+        "hk",
+        "h",
+        "da"
+      ],
+      "testo": "Qual è la scomposizione additiva (somma dei valori) di 18.500.170?",
+      "opzioni": [
+        "10.000.000 + 8.000.000 + 500.000 + 100 + 70",
+        "10.000.000 + 8.000.000 + 500.000 + 1.000 + 70",
+        "1.000.000 + 8.000.000 + 500.000 + 100 + 70",
+        "10.000.000 + 8.000.000 + 5.000 + 100 + 70"
+      ],
+      "corretta": 0,
+      "hint": "18 milioni sono 10.000.000 + 8.000.000; poi aggiungi i valori non nulli.",
+      "audience": [
+        60,
+        14,
+        14,
+        12
+      ],
+      "spiegazione": "Somma dei valori delle cifre non nulle: 10.000.000 + 8.000.000 + 500.000 + 100 + 70."
+    },
+    {
+      "id": "L06-E-002",
+      "livello": 6,
+      "tipologia": "E",
+      "fascia": "migliaia",
+      "numero": 4706,
+      "marche": [
+        "uk",
+        "h",
+        "u"
+      ],
+      "testo": "Qual è la scomposizione additiva di 4.706?",
+      "opzioni": [
+        "4.000 + 700 + 6",
+        "4.000 + 70 + 6",
+        "400 + 700 + 6",
+        "4.000 + 700 + 60"
+      ],
+      "corretta": 0,
+      "hint": "Il 7 vale 700 (h) e la decina è 0: non compare.",
+      "audience": [
+        70,
+        12,
+        10,
+        8
+      ],
+      "spiegazione": "4.706 = 4.000 + 700 + 6 (la decina vale 0 e si omette)."
+    },
+    {
+      "id": "L11-E-003",
+      "livello": 11,
+      "tipologia": "E",
+      "fascia": "miliardi",
+      "numero": 4020000050,
+      "marche": [
+        "uG",
+        "daM",
+        "da"
+      ],
+      "testo": "Qual è la scomposizione additiva di 4.020.000.050?",
+      "opzioni": [
+        "4.000.000.000 + 20.000.000 + 50",
+        "4.000.000.000 + 2.000.000 + 50",
+        "4.000.000.000 + 200.000.000 + 50",
+        "4.000.000.000 + 20.000.000 + 500"
+      ],
+      "corretta": 0,
+      "hint": "20 milioni sono 20.000.000, non 2.000.000.",
+      "audience": [
+        58,
+        16,
+        14,
+        12
+      ],
+      "spiegazione": "4.020.000.050 = 4.000.000.000 + 20.000.000 + 50."
+    },
+    {
+      "id": "L11-F-001",
+      "livello": 11,
+      "tipologia": "F",
+      "fascia": "milioni",
+      "numero": 18500170,
+      "marche": [
+        "daM",
+        "uM",
+        "hk",
+        "h",
+        "da"
+      ],
+      "testo": "Qual è la notazione polinomiale di 18.500.170?",
+      "opzioni": [
+        "(1×10.000.000)+(8×1.000.000)+(5×100.000)+(1×100)+(7×10)",
+        "(1×10.000.000)+(8×1.000.000)+(5×1.000)+(1×100)+(7×10)",
+        "(1×1.000.000)+(8×100.000)+(5×10.000)+(1×100)+(7×10)",
+        "(1×10.000.000)+(8×1.000.000)+(5×100.000)+(1×10)+(7×100)"
+      ],
+      "corretta": 0,
+      "hint": "Ogni cifra va moltiplicata per il valore della sua marca (potenza di 10).",
+      "audience": [
+        56,
+        16,
+        16,
+        12
+      ],
+      "spiegazione": "Ogni cifra per la sua potenza di 10: (1×10.000.000)+(8×1.000.000)+(5×100.000)+(1×100)+(7×10)."
+    },
+    {
+      "id": "L12-F-002",
+      "livello": 12,
+      "tipologia": "F",
+      "fascia": "migliaia",
+      "numero": 4706,
+      "marche": [
+        "uk",
+        "h",
+        "u"
+      ],
+      "testo": "Qual è la notazione polinomiale di 4.706?",
+      "opzioni": [
+        "(4×1.000)+(7×100)+(6×1)",
+        "(4×100)+(7×10)+(6×1)",
+        "(4×1.000)+(7×10)+(6×1)",
+        "(4×1.000)+(7×100)+(6×10)"
+      ],
+      "corretta": 0,
+      "hint": "4 è in uk, 7 in h, 6 in u: usa 1.000, 100 e 1.",
+      "audience": [
+        66,
+        12,
+        12,
+        10
+      ],
+      "spiegazione": "4.706 = (4×1.000)+(7×100)+(6×1)."
+    },
+    {
+      "id": "L15-F-003",
+      "livello": 15,
+      "tipologia": "F",
+      "fascia": "milioni",
+      "numero": 901002500,
+      "marche": [
+        "hM",
+        "uM",
+        "uk",
+        "h"
+      ],
+      "testo": "Qual è la notazione polinomiale di 901.002.500, includendo i termini con fattore zero?",
+      "opzioni": [
+        "(9×100.000.000)+(0×10.000.000)+(1×1.000.000)+(0×100.000)+(0×10.000)+(2×1.000)+(5×100)",
+        "(9×100.000.000)+(1×10.000.000)+(2×1.000)+(5×100)",
+        "(9×100.000.000)+(1×1.000.000)+(2×100)+(5×10)",
+        "(9×10.000.000)+(1×1.000.000)+(2×1.000)+(5×100)"
+      ],
+      "corretta": 0,
+      "hint": "Per ogni posizione scrivi la cifra, anche 0, moltiplicata per la sua potenza di 10.",
+      "audience": [
+        52,
+        16,
+        18,
+        14
+      ],
+      "spiegazione": "901.002.500 = (9×100.000.000)+(0×10.000.000)+(1×1.000.000)+(0×100.000)+(0×10.000)+(2×1.000)+(5×100)."
+    },
+    {
+      "id": "L08-G-001",
+      "livello": 8,
+      "tipologia": "G",
+      "fascia": "migliaia",
+      "numero": 998500,
+      "marche": [
+        "hk",
+        "dak",
+        "uk",
+        "h"
+      ],
+      "testo": "Quanto manca a 998.500 per raggiungere 1.000.000?",
+      "opzioni": [
+        "1.500",
+        "1.000",
+        "2.500",
+        "500"
+      ],
+      "corretta": 0,
+      "hint": "Da 998.500 a 1.000.000: completa prima le migliaia, poi il migliaio.",
+      "audience": [
+        62,
+        14,
+        14,
+        10
+      ],
+      "spiegazione": "1.000.000 − 998.500 = 1.500."
+    },
+    {
+      "id": "L13-G-002",
+      "livello": 13,
+      "tipologia": "G",
+      "fascia": "miliardi",
+      "numero": 999950000,
+      "marche": [
+        "hM",
+        "daM",
+        "uM",
+        "hk",
+        "dak",
+        "uk"
+      ],
+      "testo": "Quanto manca a 999.950.000 per arrivare a 1 miliardo?",
+      "opzioni": [
+        "50.000",
+        "500.000",
+        "5.000",
+        "50.000.000"
+      ],
+      "corretta": 0,
+      "hint": "1.000.000.000 − 999.950.000: guarda le ultime sei cifre.",
+      "audience": [
+        60,
+        16,
+        14,
+        10
+      ],
+      "spiegazione": "1.000.000.000 − 999.950.000 = 50.000."
+    },
+    {
+      "id": "L10-G-003",
+      "livello": 10,
+      "tipologia": "G",
+      "fascia": "migliaia",
+      "numero": 999700,
+      "marche": [
+        "hk",
+        "dak",
+        "uk",
+        "h"
+      ],
+      "testo": "Quanto manca a 999.700 per raggiungere 1.000.000?",
+      "opzioni": [
+        "300",
+        "700",
+        "3.000",
+        "30"
+      ],
+      "corretta": 0,
+      "hint": "Da 999.700 a 1.000.000 servono 3 centinaia.",
+      "audience": [
+        64,
+        14,
+        12,
+        10
+      ],
+      "spiegazione": "1.000.000 − 999.700 = 300."
+    }
+  ]
+}
