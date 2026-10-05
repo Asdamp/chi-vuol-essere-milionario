@@ -15,5 +15,7 @@ Glossario del progetto. Solo linguaggio di dominio: nessun dettaglio implementat
 - **Traguardo** (safe point): livello soglia (5 e 10) che garantisce un punteggio minimo salvato in caso di errore.
 - **Aiuti**: i tre supporti una tantum per partita — 50:50, Pubblico, Chiamata a casa.
 - **Banca domande**: l'insieme strutturato dei quesiti, categorizzati per livello e tipologia, da cui si pesca a ogni partita.
+- **Distrattore**: una delle tre risposte sbagliate ma plausibili di un quesito; il generatore ne garantisce la plausibilità e l'unicità della risposta corretta.
+- **Trabocchetto**: quesito dei livelli alti costruito su numeri con zeri interni, per verificare che il bambino non salti le posizioni vuote.
 - **Spiegazione**: il breve commento didattico mostrato dopo la risposta, che chiarisce il valore posizionale in gioco.
 - **Record personale**: il miglior importo vinto (con il livello raggiunto) salvato sul dispositivo in `localStorage`; mostrato all'avvio e a fine partita. Non c'è classifica condivisa.
