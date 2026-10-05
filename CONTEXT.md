@@ -16,3 +16,4 @@ Glossario del progetto. Solo linguaggio di dominio: nessun dettaglio implementat
 - **Aiuti**: i tre supporti una tantum per partita — 50:50, Pubblico, Chiamata a casa.
 - **Banca domande**: l'insieme strutturato dei quesiti, categorizzati per livello e tipologia, da cui si pesca a ogni partita.
 - **Spiegazione**: il breve commento didattico mostrato dopo la risposta, che chiarisce il valore posizionale in gioco.
+- **Record personale**: il miglior importo vinto (con il livello raggiunto) salvato sul dispositivo in `localStorage`; mostrato all'avvio e a fine partita. Non c'è classifica condivisa.
