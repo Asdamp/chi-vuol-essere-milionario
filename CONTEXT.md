@@ -6,9 +6,8 @@ Glossario del progetto. Solo linguaggio di dominio: nessun dettaglio implementat
 
 - **Grande numero**: numero del sistema posizionale decimale che coinvolge migliaia, milioni o miliardi; oggetto di studio della classe quinta.
 - **Sistema di numerazione posizionale decimale**: sistema in cui il valore di una cifra dipende dalla sua posizione; ogni posizione vale dieci volte quella alla sua destra.
-- **Marca**: nome della posizione di una cifra (unità `u`, decina `da`, centinaio `h`, unità di migliaia `uk`, decina di migliaia `dak`, centinaio di migliaia `hk`, unità di milione `uM`, decina di milione `daM`, centinaio di milione `hM`, unità di miliardo `uG`, decina di miliardo `daG`, centinaio di miliardo `hG`).
-- **Valore posizionale**: peso numerico effettivo di una cifra data la sua marca (es. la cifra `5` in `18.500.170` vale `500.000`).
-- **Tipologia**: una delle sette famiglie di quesito (A–G) definite nelle specifiche: riconoscimento marca, valore posizionale, scomposizione canonica, conversione cifre↔lettere, scomposizione additiva, notazione polinomiale, complementare.
+- **Valore posizionale**: la posizione che una cifra occupa nel numero, con il nome e il peso che ne derivano; si nomina con unità `u`, decina `da`, centinaio `h`, unità di migliaia `uk`, decina di migliaia `dak`, centinaio di migliaia `hk`, unità di milione `uM`, decina di milione `daM`, centinaio di milione `hM`, unità di miliardo `uG`, decina di miliardo `daG`, centinaio di miliardo `hG` (es. in `18.500.170` la cifra `5` ha valore posizionale `hk` e vale `500.000`). Il termine preferito è "valore posizionale"; "marca" non si usa.
+- **Tipologia**: una delle sette famiglie di quesito (A–G) definite nelle specifiche: riconoscimento del valore posizionale, valore numerico, scomposizione canonica, conversione cifre↔lettere, scomposizione additiva (somma dei valori), notazione polinomiale, complementare.
 - **Fascia numerica**: intervallo di grandezza dei numeri usati in un blocco di livelli (entro `999.999`; entro `999.999.999`; oltre il miliardo).
 - **Livello**: uno dei 15 gradini a difficoltà crescente della partita; a ogni livello corrisponde una domanda.
 - **Partita**: una singola sessione di gioco, dal livello 1 al livello 15 o fino all'errore.
