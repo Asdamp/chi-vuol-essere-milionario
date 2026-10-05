@@ -1,0 +1,13 @@
+{
+  "name": "chi-vuol-essere-milionario",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Quiz sui grandi numeri (scuola primaria), ispirato a Chi vuol essere milionario.",
+  "scripts": {
+    "test": "node --test tools/",
+    "genera": "node tools/genera-domande.mjs",
+    "valida": "node tools/valida-banca.mjs",
+    "servi": "python3 -m http.server 8000"
+  }
+}
