@@ -7,12 +7,12 @@
       "tipologia": "A",
       "fascia": "migliaia",
       "numero": 4706,
-      "marche": [
+      "valoriPosizionali": [
         "uk",
         "h",
         "u"
       ],
-      "testo": "Nel numero 4.706, quale marca occupa la cifra 4?",
+      "testo": "Nel numero 4.706, quale valore posizionale occupa la cifra 4?",
       "opzioni": [
         "Unità (u)",
         "Decine (da)",
@@ -35,14 +35,14 @@
       "tipologia": "A",
       "fascia": "milioni",
       "numero": 18500170,
-      "marche": [
+      "valoriPosizionali": [
         "daM",
         "uM",
         "hk",
         "h",
         "da"
       ],
-      "testo": "Nel numero 18.500.170, quale marca occupa la cifra 5?",
+      "testo": "Nel numero 18.500.170, quale valore posizionale occupa la cifra 5?",
       "opzioni": [
         "Unità di migliaia (uk)",
         "Decine di migliaia (dak)",
@@ -65,13 +65,13 @@
       "tipologia": "A",
       "fascia": "miliardi",
       "numero": 901002500,
-      "marche": [
+      "valoriPosizionali": [
         "hM",
         "uM",
         "uk",
         "h"
       ],
-      "testo": "Nel numero 901.002.500, quale marca occupa la cifra 9?",
+      "testo": "Nel numero 901.002.500, quale valore posizionale occupa la cifra 9?",
       "opzioni": [
         "Centinaia di migliaia (hk)",
         "Unità di milione (uM)",
@@ -94,7 +94,7 @@
       "tipologia": "B",
       "fascia": "migliaia",
       "numero": 4706,
-      "marche": [
+      "valoriPosizionali": [
         "h"
       ],
       "testo": "Nel numero 4.706, a quale valore corrisponde la cifra 7?",
@@ -112,7 +112,7 @@
         10,
         6
       ],
-      "spiegazione": "Il 7 occupa la marca h (centinaia), quindi vale 7 × 100 = 700."
+      "spiegazione": "Il 7 occupa il valore posizionale h (centinaia), quindi vale 7 × 100 = 700."
     },
     {
       "id": "L07-B-002",
@@ -120,7 +120,7 @@
       "tipologia": "B",
       "fascia": "milioni",
       "numero": 18500170,
-      "marche": [
+      "valoriPosizionali": [
         "hk"
       ],
       "testo": "Nel numero 18.500.170, a quale valore corrisponde la cifra 5?",
@@ -131,7 +131,7 @@
         "5.000"
       ],
       "corretta": 1,
-      "hint": "La cifra 5 sta nella marca hk: moltiplica per 100.000.",
+      "hint": "La cifra 5 sta nel valore posizionale hk: moltiplica per 100.000.",
       "audience": [
         15,
         70,
@@ -146,7 +146,7 @@
       "tipologia": "B",
       "fascia": "miliardi",
       "numero": 901002500,
-      "marche": [
+      "valoriPosizionali": [
         "hM"
       ],
       "testo": "Nel numero 901.002.500, a quale valore corrisponde la cifra 9?",
@@ -172,12 +172,12 @@
       "tipologia": "C",
       "fascia": "migliaia",
       "numero": 4706,
-      "marche": [
+      "valoriPosizionali": [
         "uk",
         "h",
         "u"
       ],
-      "testo": "Qual è la scomposizione per marche del numero 4.706?",
+      "testo": "Qual è la scomposizione per valori posizionali del numero 4.706?",
       "opzioni": [
         "4 uk + 7 h + 6 u",
         "4 h + 7 da + 6 u",
@@ -185,7 +185,7 @@
         "4 uM + 7 h + 6 u"
       ],
       "corretta": 0,
-      "hint": "Separa le cifre per marca, senza saltare la decina che qui vale 0.",
+      "hint": "Separa le cifre per valore posizionale, senza saltare la decina che qui vale 0.",
       "audience": [
         65,
         12,
@@ -200,14 +200,14 @@
       "tipologia": "C",
       "fascia": "milioni",
       "numero": 18500170,
-      "marche": [
+      "valoriPosizionali": [
         "daM",
         "uM",
         "hk",
         "h",
         "da"
       ],
-      "testo": "Qual è la scomposizione per marche del numero 18.500.170?",
+      "testo": "Qual è la scomposizione per valori posizionali del numero 18.500.170?",
       "opzioni": [
         "1 uM + 8 daM + 5 hk + 1 h + 7 da",
         "1 daM + 8 uM + 5 hk + 1 h + 7 da",
@@ -230,12 +230,12 @@
       "tipologia": "C",
       "fascia": "miliardi",
       "numero": 4020000050,
-      "marche": [
+      "valoriPosizionali": [
         "uG",
         "daM",
         "da"
       ],
-      "testo": "Qual è la scomposizione per marche del numero 4.020.000.050?",
+      "testo": "Qual è la scomposizione per valori posizionali del numero 4.020.000.050?",
       "opzioni": [
         "4 uG + 2 daM + 5 da",
         "4 uG + 2 hM + 5 da",
@@ -258,7 +258,7 @@
       "tipologia": "D",
       "fascia": "migliaia",
       "numero": 998500,
-      "marche": [
+      "valoriPosizionali": [
         "hk",
         "dak",
         "uk",
@@ -287,7 +287,7 @@
       "tipologia": "D",
       "fascia": "miliardi",
       "numero": 4002000050,
-      "marche": [
+      "valoriPosizionali": [
         "uG",
         "uM",
         "da"
@@ -315,7 +315,7 @@
       "tipologia": "D",
       "fascia": "milioni",
       "numero": 18500170,
-      "marche": [
+      "valoriPosizionali": [
         "daM",
         "uM",
         "hk",
@@ -345,7 +345,7 @@
       "tipologia": "E",
       "fascia": "milioni",
       "numero": 18500170,
-      "marche": [
+      "valoriPosizionali": [
         "daM",
         "uM",
         "hk",
@@ -375,12 +375,12 @@
       "tipologia": "E",
       "fascia": "migliaia",
       "numero": 4706,
-      "marche": [
+      "valoriPosizionali": [
         "uk",
         "h",
         "u"
       ],
-      "testo": "Qual è la scomposizione additiva di 4.706?",
+      "testo": "Qual è la scomposizione additiva (somma dei valori) di 4.706?",
       "opzioni": [
         "4.000 + 700 + 6",
         "4.000 + 70 + 6",
@@ -403,12 +403,12 @@
       "tipologia": "E",
       "fascia": "miliardi",
       "numero": 4020000050,
-      "marche": [
+      "valoriPosizionali": [
         "uG",
         "daM",
         "da"
       ],
-      "testo": "Qual è la scomposizione additiva di 4.020.000.050?",
+      "testo": "Qual è la scomposizione additiva (somma dei valori) di 4.020.000.050?",
       "opzioni": [
         "4.000.000.000 + 20.000.000 + 50",
         "4.000.000.000 + 2.000.000 + 50",
@@ -431,7 +431,7 @@
       "tipologia": "F",
       "fascia": "milioni",
       "numero": 18500170,
-      "marche": [
+      "valoriPosizionali": [
         "daM",
         "uM",
         "hk",
@@ -446,7 +446,7 @@
         "(1×10.000.000)+(8×1.000.000)+(5×100.000)+(1×10)+(7×100)"
       ],
       "corretta": 0,
-      "hint": "Ogni cifra va moltiplicata per il valore della sua marca (potenza di 10).",
+      "hint": "Ogni cifra va moltiplicata per il valore posizionale (potenza di 10).",
       "audience": [
         56,
         16,
@@ -461,7 +461,7 @@
       "tipologia": "F",
       "fascia": "migliaia",
       "numero": 4706,
-      "marche": [
+      "valoriPosizionali": [
         "uk",
         "h",
         "u"
@@ -489,7 +489,7 @@
       "tipologia": "F",
       "fascia": "milioni",
       "numero": 901002500,
-      "marche": [
+      "valoriPosizionali": [
         "hM",
         "uM",
         "uk",
@@ -518,7 +518,7 @@
       "tipologia": "G",
       "fascia": "migliaia",
       "numero": 998500,
-      "marche": [
+      "valoriPosizionali": [
         "hk",
         "dak",
         "uk",
@@ -547,7 +547,7 @@
       "tipologia": "G",
       "fascia": "miliardi",
       "numero": 999950000,
-      "marche": [
+      "valoriPosizionali": [
         "hM",
         "daM",
         "uM",
@@ -578,7 +578,7 @@
       "tipologia": "G",
       "fascia": "migliaia",
       "numero": 999700,
-      "marche": [
+      "valoriPosizionali": [
         "hk",
         "dak",
         "uk",
