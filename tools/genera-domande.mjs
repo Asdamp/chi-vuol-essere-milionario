@@ -156,37 +156,48 @@ function tipoB(livello, fascia) {
   throw new Error("tipoB: nessun numero con cifra unica");
 }
 
-function scomposizioneCanonica(n, ordineDiscendente = true) {
-  const termini = cifreNonNulle(n).map((c) => ({ ...c, testo: `${c.d} ${MARCHE[c.i].code}` }));
-  if (ordineDiscendente) termini.sort((a, b) => b.i - a.i);
-  return termini;
-}
-
 function tipoC(livello, fascia) {
   const n = generaNumero(fascia, { nonNulle: [3, 5] });
-  const termini = scomposizioneCanonica(n);
-  const correct = termini.map((t) => t.testo).join(" + ");
+  const termini = cifreNonNulle(n).map((c) => ({ d: c.d, i: c.i }));
+  const disordine = livello >= 11;
+  const rendi = (ts) => {
+    const ord = ts.slice().sort((a, b) => b.i - a.i);
+    if (disordine) shuffle(ord);
+    return ord.map((t) => `${t.d} ${MARCHE[t.i].code}`).join(" + ");
+  };
+  const chiave = (ts) => ts.map((t) => t.d + "@" + t.i).sort().join(",");
+  const visti = new Set([chiave(termini)]);
   const candidati = [];
-  if (termini.length >= 2) {
-    const sw = termini.slice(); [sw[0], sw[1]] = [sw[1], sw[0]];
-    candidati.push(sw.map((t) => t.testo).join(" + "));
-    candidati.push(termini.slice(1).map((t) => t.testo).join(" + "));
-  }
+  const proponi = (ts) => {
+    if (ts.some((t) => t.d <= 0 || t.i < 0 || t.i >= MARCHE.length)) return;
+    if (new Set(ts.map((t) => t.i)).size !== ts.length) return; // niente posizioni duplicate
+    const k = chiave(ts);
+    if (visti.has(k)) return;
+    visti.add(k);
+    candidati.push(rendi(ts));
+  };
+  // I distrattori cambiano i VALORI (coefficiente o posizione), mai solo l'ordine:
+  // un riordino sarebbe ancora una scomposizione corretta.
   for (const t of termini) {
-    const alt = termini.map((x) => (x === t ? { d: x.d, i: Math.min(x.i + 1, MARCHE.length - 1), testo: `${x.d} ${MARCHE[Math.min(x.i + 1, MARCHE.length - 1)].code}` } : x));
-    candidati.push(alt.map((x) => x.testo).join(" + "));
-    const d2 = t.d === 9 ? 8 : t.d + 1;
-    const alt2 = termini.map((x) => (x === t ? { d: d2, i: x.i, testo: `${d2} ${MARCHE[x.i].code}` } : x));
-    candidati.push(alt2.map((x) => x.testo).join(" + "));
+    proponi(termini.map((x) => (x === t ? { d: x.d === 9 ? 8 : x.d + 1, i: x.i } : x)));
+    proponi(termini.map((x) => (x === t ? { d: x.d === 1 ? 2 : x.d - 1, i: x.i } : x)));
+    proponi(termini.map((x) => (x === t ? { d: x.d, i: x.i + 1 } : x)));
+    proponi(termini.map((x) => (x === t ? { d: x.d, i: x.i - 1 } : x)));
   }
+  if (termini.length >= 2) for (const t of termini) proponi(termini.filter((x) => x !== t));
+  const alto = Math.max(...termini.map((t) => t.i));
+  for (let i = 0; i <= alto + 1 && i < MARCHE.length; i++) if (!termini.some((t) => t.i === i)) proponi([...termini, { d: 1, i }]);
+  const correct = rendi(termini);
   const { opzioni, corretta } = assembla(correct, scegliDistrattori(correct, candidati));
+  const canonica = termini.slice().sort((a, b) => b.i - a.i).map((t) => `${t.d} ${MARCHE[t.i].code}`).join(" + ");
   return {
-    numero: n, valoriPosizionali: termini.map((t) => MARCHE[t.i].code),
+    numero: n,
+    valoriPosizionali: termini.slice().sort((a, b) => b.i - a.i).map((t) => MARCHE[t.i].code),
     testo: `Qual è la scomposizione per valori posizionali del numero ${fmt(n)}?`,
     opzioni, corretta,
-    hint: `Elenca le cifre non nulle dalla posizione più alta alla più bassa, ciascuna con il suo codice.`,
+    hint: "Elenca le cifre non nulle, ciascuna con il codice del suo valore posizionale: l'ordine non conta, conta il valore.",
     audience: audience(corretta),
-    spiegazione: `${fmt(n)} = ${correct}.`,
+    spiegazione: `${fmt(n)} = ${canonica}.`,
   };
 }
 
@@ -252,14 +263,27 @@ function tipoF(livello, fascia) {
   const conZeri = fascia !== "migliaia" && rng() < 0.6;
   const indici = [];
   for (let i = alto; i >= basso; i--) if (conZeri || cifraA(n, i) !== 0) indici.push(i);
+  const termini = indici.map((i) => [cifraA(n, i), i]);
   const termine = (d, i) => `(${d}×${fmt(10 ** i)})`;
-  const correct = indici.map((i) => termine(cifraA(n, i), i)).join("+");
+  const rendi = (ts) => ts.map(([d, i]) => termine(d, i)).join("+");
+  const valore = (ts) => ts.reduce((s, [d, i]) => s + d * 10 ** i, 0);
+  const correct = rendi(termini);
+  const visto = new Set([correct]);
   const candidati = [];
-  for (const i of indici) {
-    candidati.push(indici.map((j) => (j === i ? termine(cifraA(n, j), j + 1) : termine(cifraA(n, j), j))).join("+"));
-    candidati.push(indici.map((j) => (j === i ? termine(cifraA(n, j) === 9 ? 8 : cifraA(n, j) + 1, j) : termine(cifraA(n, j), j))).join("+"));
+  const proponi = (ts) => {
+    // Mai un'opzione che valga n (es. toccare un termine a fattore zero non cambia il valore).
+    if (ts.some(([, i]) => i < 0) || valore(ts) === n) return;
+    const s = rendi(ts);
+    if (visto.has(s)) return;
+    visto.add(s);
+    candidati.push(s);
+  };
+  const nonZero = termini.filter(([d]) => d !== 0);
+  for (const [d, i] of nonZero) {
+    proponi(termini.map(([dd, ii]) => (ii === i ? [dd, i + 1] : [dd, ii])));
+    proponi(termini.map(([dd, ii]) => (ii === i ? [d === 9 ? 8 : d + 1, ii] : [dd, ii])));
   }
-  if (indici.length >= 2) candidati.push(indici.slice(1).map((i) => termine(cifraA(n, i), i)).join("+"));
+  if (termini.length >= 2) for (const [, i] of nonZero) proponi(termini.filter(([, ii]) => ii !== i));
   const { opzioni, corretta } = assembla(correct, scegliDistrattori(correct, candidati));
   return {
     numero: n, valoriPosizionali: nn.map((c) => MARCHE[c.i].code),
