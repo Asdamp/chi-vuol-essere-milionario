@@ -11,7 +11,7 @@ const DOMANDE_PER_LIVELLO = 12;
 const TIPOLOGIE_PER_LIVELLO = {
   1: ["A", "B"], 2: ["A", "B", "D"], 3: ["A", "B", "D"], 4: ["A", "B", "C"], 5: ["A", "B", "C", "D"],
   6: ["A", "B", "C", "E"], 7: ["A", "B", "C", "E"], 8: ["A", "B", "C", "E", "G"], 9: ["A", "B", "D", "E", "G"], 10: ["B", "C", "E", "G"],
-  11: ["C", "E", "F"], 12: ["C", "F", "G"], 13: ["B", "C", "F", "G"], 14: ["C", "D", "F", "G"], 15: ["C", "D", "F", "G"],
+  11: ["C", "E", "F", "H"], 12: ["C", "F", "G", "H"], 13: ["B", "C", "F", "G", "H"], 14: ["C", "D", "F", "G", "H"], 15: ["C", "D", "F", "G", "H"],
 };
 
 const MARCHE = [
@@ -36,6 +36,8 @@ function mulberry32(a) {
 const rng = mulberry32(SEME);
 const randInt = (a, b) => a + Math.floor(rng() * (b - a + 1));
 const fmt = (n) => n.toLocaleString("it-IT");
+const APICI = { 0: "⁰", 1: "¹", 2: "²", 3: "³", 4: "⁴", 5: "⁵", 6: "⁶", 7: "⁷", 8: "⁸", 9: "⁹" };
+const apice = (i) => String(i).split("").map((c) => APICI[c]).join("");
 const shuffle = (arr) => { for (let i = arr.length - 1; i > 0; i--) { const j = Math.floor(rng() * (i + 1)); [arr[i], arr[j]] = [arr[j], arr[i]]; } return arr; };
 
 function cifraA(n, i) { return Math.floor(n / 10 ** i) % 10; }
@@ -312,7 +314,48 @@ function tipoG(livello, fascia) {
   };
 }
 
-const GENERATORI = { A: tipoA, B: tipoB, C: tipoC, D: tipoD, E: tipoE, F: tipoF, G: tipoG };
+function tipoH(livello, fascia) {
+  const n = generaNumero(fascia, { nonNulle: [3, 5] });
+  const nn = cifreNonNulle(n);
+  const alto = Math.max(...nn.map((c) => c.i));
+  const basso = Math.min(...nn.map((c) => c.i));
+  const conZeri = rng() < 0.6;
+  const indici = [];
+  for (let i = alto; i >= basso; i--) if (conZeri || cifraA(n, i) !== 0) indici.push(i);
+  const termini = indici.map((i) => [cifraA(n, i), i]);
+  const termine = (d, i) => `${d}×10${apice(i)}`;
+  const rendi = (ts) => ts.map(([d, i]) => termine(d, i)).join(" + ");
+  const valore = (ts) => ts.reduce((s, [d, i]) => s + d * 10 ** i, 0);
+  const correct = rendi(termini);
+  const visto = new Set([correct]);
+  const candidati = [];
+  const proponi = (ts) => {
+    // Mai un'opzione che valga n (es. toccare un termine a fattore zero non cambia il valore).
+    if (ts.some(([, i]) => i < 0 || i >= MARCHE.length) || valore(ts) === n) return;
+    const s = rendi(ts);
+    if (visto.has(s)) return;
+    visto.add(s);
+    candidati.push(s);
+  };
+  const nonZero = termini.filter(([d]) => d !== 0);
+  for (const [d, i] of nonZero) {
+    proponi(termini.map(([dd, ii]) => (ii === i ? [dd, i + 1] : [dd, ii])));
+    proponi(termini.map(([dd, ii]) => (ii === i ? [dd, i - 1] : [dd, ii])));
+    proponi(termini.map(([dd, ii]) => (ii === i ? [d === 9 ? 8 : d + 1, ii] : [dd, ii])));
+  }
+  if (termini.length >= 2) for (const [, i] of nonZero) proponi(termini.filter(([, ii]) => ii !== i));
+  const { opzioni, corretta } = assembla(correct, scegliDistrattori(correct, candidati));
+  return {
+    numero: n, valoriPosizionali: nn.map((c) => MARCHE[c.i].code),
+    testo: `Qual è la scomposizione polinomiale di ${fmt(n)} con le potenze del 10${conZeri ? ", includendo i termini con fattore zero" : ""}?`,
+    opzioni, corretta,
+    hint: "Ogni cifra va moltiplicata per la potenza di 10 della sua posizione (10⁰ = 1).",
+    audience: audience(corretta),
+    spiegazione: `${fmt(n)} = ${correct}.`,
+  };
+}
+
+const GENERATORI = { A: tipoA, B: tipoB, C: tipoC, D: tipoD, E: tipoE, F: tipoF, G: tipoG, H: tipoH };
 
 function valida(q, tipo) {
   const err = (m) => { throw new Error(`[${q.id}] ${m}`); };
@@ -323,7 +366,7 @@ function valida(q, tipo) {
   if (q.audience[q.corretta] !== Math.max(...q.audience)) err("audience: il massimo non è sulla corretta");
   if (!q.hint || !q.spiegazione) err("hint o spiegazione mancante");
   if (!q.testo) err("testo mancante");
-  if (!["A", "B", "C", "D", "E", "F", "G"].includes(tipo)) err("tipologia sconosciuta");
+  if (!["A", "B", "C", "D", "E", "F", "G", "H"].includes(tipo)) err("tipologia sconosciuta");
 }
 
 function main() {

@@ -30,6 +30,16 @@ function valutaPolinomio(opzione) {
   for (const m of opzione.matchAll(/\((\d+)×([\d.]+)\)/g)) { somma += Number(m[1]) * int(m[2]); trovato = true; }
   return trovato ? somma : null;
 }
+const APICI = "⁰¹²³⁴⁵⁶⁷⁸⁹";
+function valutaPotenze(opzione) {
+  let somma = 0, trovato = false;
+  for (const m of opzione.matchAll(/(\d+)×10([⁰¹²³⁴⁵⁶⁷⁸⁹]+)/g)) {
+    const esp = [...m[2]].map((c) => APICI.indexOf(c)).join("");
+    somma += Number(m[1]) * 10 ** Number(esp);
+    trovato = true;
+  }
+  return trovato ? somma : null;
+}
 const quante = (arr, pred) => arr.filter(pred).length;
 
 const banca = JSON.parse(readFileSync("data/questions.json", "utf8"));
@@ -93,6 +103,12 @@ for (const q of banca.domande) {
       if (valutaPolinomio(ops[corr]) !== num) err(q, "tipo F: corretta non valida");
       const nCorrette = quante(ops, (o) => valutaPolinomio(o) === num);
       if (nCorrette !== 1) err(q, `tipo F ambiguo: ${nCorrette} opzioni corrette`);
+      break;
+    }
+    case "H": {
+      if (valutaPotenze(ops[corr]) !== num) err(q, "tipo H: corretta non valida");
+      const nCorrette = quante(ops, (o) => valutaPotenze(o) === num);
+      if (nCorrette !== 1) err(q, `tipo H ambiguo: ${nCorrette} opzioni corrette`);
       break;
     }
     case "G": {

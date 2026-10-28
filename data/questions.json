@@ -3490,424 +3490,450 @@
       "spiegazione": "118.000.600.900 = (1×100.000.000.000)+(1×10.000.000.000)+(8×1.000.000.000)+(0×100.000.000)+(0×10.000.000)+(0×1.000.000)+(6×100.000)+(0×10.000)+(0×1000)+(9×100)."
     },
     {
-      "id": "L11-C-004",
+      "id": "L11-H-004",
       "livello": 11,
-      "tipologia": "C",
+      "tipologia": "H",
       "fascia": "miliardi",
       "numero": 7040000290,
       "valoriPosizionali": [
-        "uG",
-        "daM",
+        "da",
         "h",
+        "daM",
+        "uG"
+      ],
+      "testo": "Qual è la scomposizione polinomiale di 7.040.000.290 con le potenze del 10?",
+      "opzioni": [
+        "7×10⁸ + 4×10⁷ + 2×10² + 9×10¹",
+        "7×10¹⁰ + 4×10⁷ + 2×10² + 9×10¹",
+        "7×10⁹ + 4×10⁷ + 2×10² + 9×10¹",
+        "8×10⁹ + 4×10⁷ + 2×10² + 9×10¹"
+      ],
+      "corretta": 2,
+      "hint": "Ogni cifra va moltiplicata per la potenza di 10 della sua posizione (10⁰ = 1).",
+      "audience": [
+        13,
+        4,
+        62,
+        21
+      ],
+      "spiegazione": "7.040.000.290 = 7×10⁹ + 4×10⁷ + 2×10² + 9×10¹."
+    },
+    {
+      "id": "L11-C-005",
+      "livello": 11,
+      "tipologia": "C",
+      "fascia": "miliardi",
+      "numero": 8800000090,
+      "valoriPosizionali": [
+        "uG",
+        "hM",
         "da"
       ],
-      "testo": "Qual è la scomposizione per valori posizionali del numero 7.040.000.290?",
+      "testo": "Qual è la scomposizione per valori posizionali del numero 8.800.000.090?",
       "opzioni": [
-        "4 daM + 2 h + 7 uG + 9 da",
-        "4 daM + 9 u + 7 uG + 2 h",
-        "4 daM + 9 da + 3 h + 7 uG",
-        "4 daM + 7 uG + 2 h + 8 da"
+        "8 uG + 8 hM + 8 da",
+        "8 hM + 8 uG + 9 h",
+        "9 u + 8 uG + 8 hM",
+        "8 hM + 9 da + 8 uG"
+      ],
+      "corretta": 3,
+      "hint": "Elenca le cifre non nulle, ciascuna con il codice del suo valore posizionale: l'ordine non conta, conta il valore.",
+      "audience": [
+        10,
+        14,
+        18,
+        58
+      ],
+      "spiegazione": "8.800.000.090 = 8 uG + 8 hM + 9 da."
+    },
+    {
+      "id": "L11-E-006",
+      "livello": 11,
+      "tipologia": "E",
+      "fascia": "miliardi",
+      "numero": 430050000000,
+      "valoriPosizionali": [
+        "hG",
+        "daG",
+        "daM"
+      ],
+      "testo": "Qual è la scomposizione additiva (somma dei valori) di 430.050.000.000?",
+      "opzioni": [
+        "30.000.000.000 + 50.000.000",
+        "40.000.000.000 + 30.000.000.000 + 50.000.000",
+        "400.000.000.000 + 30.000.000.000 + 50.000.000",
+        "4.000.000.000.000 + 30.000.000.000 + 50.000.000"
+      ],
+      "corretta": 2,
+      "hint": "Per ogni cifra non nulla scrivi il suo valore (cifra × valore della posizione) e uniscili con \"+\".",
+      "audience": [
+        16,
+        3,
+        75,
+        6
+      ],
+      "spiegazione": "430.050.000.000 = 400.000.000.000 + 30.000.000.000 + 50.000.000."
+    },
+    {
+      "id": "L11-F-007",
+      "livello": 11,
+      "tipologia": "F",
+      "fascia": "miliardi",
+      "numero": 900052000008,
+      "valoriPosizionali": [
+        "u",
+        "uM",
+        "daM",
+        "hG"
+      ],
+      "testo": "Qual è la notazione polinomiale di 900.052.000.008?",
+      "opzioni": [
+        "(9×1.000.000.000.000)+(5×10.000.000)+(2×1.000.000)+(8×1)",
+        "(9×100.000.000.000)+(5×10.000.000)+(2×1.000.000)+(8×1)",
+        "(8×100.000.000.000)+(5×10.000.000)+(2×1.000.000)+(8×1)",
+        "(9×100.000.000.000)+(5×100.000.000)+(2×1.000.000)+(8×1)"
+      ],
+      "corretta": 1,
+      "hint": "Ogni cifra va moltiplicata per la potenza di 10 della sua posizione.",
+      "audience": [
+        13,
+        67,
+        7,
+        13
+      ],
+      "spiegazione": "900.052.000.008 = (9×100.000.000.000)+(5×10.000.000)+(2×1.000.000)+(8×1)."
+    },
+    {
+      "id": "L11-H-008",
+      "livello": 11,
+      "tipologia": "H",
+      "fascia": "miliardi",
+      "numero": 70310010005,
+      "valoriPosizionali": [
+        "u",
+        "dak",
+        "daM",
+        "hM",
+        "daG"
+      ],
+      "testo": "Qual è la scomposizione polinomiale di 70.310.010.005 con le potenze del 10?",
+      "opzioni": [
+        "7×10⁹ + 3×10⁸ + 1×10⁷ + 1×10⁴ + 5×10⁰",
+        "8×10¹⁰ + 3×10⁸ + 1×10⁷ + 1×10⁴ + 5×10⁰",
+        "7×10¹⁰ + 3×10⁸ + 1×10⁷ + 1×10⁴ + 5×10⁰",
+        "7×10¹¹ + 3×10⁸ + 1×10⁷ + 1×10⁴ + 5×10⁰"
+      ],
+      "corretta": 2,
+      "hint": "Ogni cifra va moltiplicata per la potenza di 10 della sua posizione (10⁰ = 1).",
+      "audience": [
+        15,
+        17,
+        57,
+        11
+      ],
+      "spiegazione": "70.310.010.005 = 7×10¹⁰ + 3×10⁸ + 1×10⁷ + 1×10⁴ + 5×10⁰."
+    },
+    {
+      "id": "L11-C-009",
+      "livello": 11,
+      "tipologia": "C",
+      "fascia": "miliardi",
+      "numero": 403000207000,
+      "valoriPosizionali": [
+        "hG",
+        "uG",
+        "hk",
+        "uk"
+      ],
+      "testo": "Qual è la scomposizione per valori posizionali del numero 403.000.207.000?",
+      "opzioni": [
+        "4 hG + 2 hk + 7 uk + 3 uG",
+        "3 uG + 6 uk + 2 hk + 4 hG",
+        "4 hG + 3 uG + 7 dak + 2 hk",
+        "3 uG + 2 hk + 8 uk + 4 hG"
       ],
       "corretta": 0,
       "hint": "Elenca le cifre non nulle, ciascuna con il codice del suo valore posizionale: l'ordine non conta, conta il valore.",
       "audience": [
-        61,
-        19,
+        57,
+        9,
         11,
-        9
+        23
       ],
-      "spiegazione": "7.040.000.290 = 7 uG + 4 daM + 2 h + 9 da."
+      "spiegazione": "403.000.207.000 = 4 hG + 3 uG + 2 hk + 7 uk."
     },
     {
-      "id": "L11-E-005",
+      "id": "L11-E-010",
       "livello": 11,
       "tipologia": "E",
       "fascia": "miliardi",
-      "numero": 19002000047,
+      "numero": 3004808000,
       "valoriPosizionali": [
-        "daG",
         "uG",
         "uM",
-        "da",
-        "u"
+        "hk",
+        "uk"
       ],
-      "testo": "Qual è la scomposizione additiva (somma dei valori) di 19.002.000.047?",
+      "testo": "Qual è la scomposizione additiva (somma dei valori) di 3.004.808.000?",
       "opzioni": [
-        "10.000.000.000 + 9.000.000.000 + 2.000.000 + 40 + 7",
-        "100.000.000.000 + 9.000.000.000 + 2.000.000 + 40 + 7",
-        "9.000.000.000 + 2.000.000 + 40 + 7",
-        "1.000.000.000 + 9.000.000.000 + 2.000.000 + 40 + 7"
+        "30.000.000.000 + 4.000.000 + 800.000 + 8000",
+        "300.000.000 + 4.000.000 + 800.000 + 8000",
+        "3.000.000.000 + 4.000.000 + 800.000 + 8000",
+        "4.000.000 + 800.000 + 8000"
       ],
-      "corretta": 0,
+      "corretta": 2,
       "hint": "Per ogni cifra non nulla scrivi il suo valore (cifra × valore della posizione) e uniscili con \"+\".",
       "audience": [
-        58,
-        8,
-        9,
-        25
+        10,
+        12,
+        71,
+        7
       ],
-      "spiegazione": "19.002.000.047 = 10.000.000.000 + 9.000.000.000 + 2.000.000 + 40 + 7."
+      "spiegazione": "3.004.808.000 = 3.000.000.000 + 4.000.000 + 800.000 + 8000."
     },
     {
-      "id": "L11-F-006",
+      "id": "L11-F-011",
       "livello": 11,
       "tipologia": "F",
       "fascia": "miliardi",
-      "numero": 260019000007,
+      "numero": 50100002000,
       "valoriPosizionali": [
-        "u",
-        "uM",
+        "uk",
+        "hM",
+        "daG"
+      ],
+      "testo": "Qual è la notazione polinomiale di 50.100.002.000, includendo i termini con fattore zero?",
+      "opzioni": [
+        "(5×100.000.000.000)+(0×1.000.000.000)+(1×100.000.000)+(0×10.000.000)+(0×1.000.000)+(0×100.000)+(0×10.000)+(2×1000)",
+        "(5×10.000.000.000)+(0×1.000.000.000)+(1×100.000.000)+(0×10.000.000)+(0×1.000.000)+(0×100.000)+(0×10.000)+(2×1000)",
+        "(6×10.000.000.000)+(0×1.000.000.000)+(1×100.000.000)+(0×10.000.000)+(0×1.000.000)+(0×100.000)+(0×10.000)+(2×1000)",
+        "(5×10.000.000.000)+(0×1.000.000.000)+(1×1.000.000.000)+(0×10.000.000)+(0×1.000.000)+(0×100.000)+(0×10.000)+(2×1000)"
+      ],
+      "corretta": 1,
+      "hint": "Ogni cifra va moltiplicata per la potenza di 10 della sua posizione.",
+      "audience": [
+        20,
+        58,
+        17,
+        5
+      ],
+      "spiegazione": "50.100.002.000 = (5×10.000.000.000)+(0×1.000.000.000)+(1×100.000.000)+(0×10.000.000)+(0×1.000.000)+(0×100.000)+(0×10.000)+(2×1000)."
+    },
+    {
+      "id": "L11-H-012",
+      "livello": 11,
+      "tipologia": "H",
+      "fascia": "miliardi",
+      "numero": 770060000000,
+      "valoriPosizionali": [
         "daM",
         "daG",
         "hG"
       ],
-      "testo": "Qual è la notazione polinomiale di 260.019.000.007?",
+      "testo": "Qual è la scomposizione polinomiale di 770.060.000.000 con le potenze del 10, includendo i termini con fattore zero?",
       "opzioni": [
-        "(2×100.000.000.000)+(6×10.000.000.000)+(1×10.000.000)+(9×1.000.000)+(7×1)",
-        "(3×100.000.000.000)+(6×10.000.000.000)+(1×10.000.000)+(9×1.000.000)+(7×1)",
-        "(2×100.000.000.000)+(6×100.000.000.000)+(1×10.000.000)+(9×1.000.000)+(7×1)",
-        "(2×1.000.000.000.000)+(6×10.000.000.000)+(1×10.000.000)+(9×1.000.000)+(7×1)"
+        "7×10¹⁰ + 7×10¹⁰ + 0×10⁹ + 0×10⁸ + 6×10⁷",
+        "7×10¹¹ + 7×10¹⁰ + 0×10⁹ + 0×10⁸ + 6×10⁷",
+        "8×10¹¹ + 7×10¹⁰ + 0×10⁹ + 0×10⁸ + 6×10⁷",
+        "7×10¹¹ + 7×10¹¹ + 0×10⁹ + 0×10⁸ + 6×10⁷"
       ],
-      "corretta": 0,
-      "hint": "Ogni cifra va moltiplicata per la potenza di 10 della sua posizione.",
-      "audience": [
-        71,
-        4,
-        14,
-        11
-      ],
-      "spiegazione": "260.019.000.007 = (2×100.000.000.000)+(6×10.000.000.000)+(1×10.000.000)+(9×1.000.000)+(7×1)."
-    },
-    {
-      "id": "L11-C-007",
-      "livello": 11,
-      "tipologia": "C",
-      "fascia": "miliardi",
-      "numero": 1000500090,
-      "valoriPosizionali": [
-        "uG",
-        "hk",
-        "da"
-      ],
-      "testo": "Qual è la scomposizione per valori posizionali del numero 1.000.500.090?",
-      "opzioni": [
-        "8 da + 1 uG + 5 hk",
-        "9 u + 1 uG + 5 hk",
-        "5 hk + 1 uG + 9 h",
-        "9 da + 1 uG + 5 hk"
-      ],
-      "corretta": 3,
-      "hint": "Elenca le cifre non nulle, ciascuna con il codice del suo valore posizionale: l'ordine non conta, conta il valore.",
-      "audience": [
-        9,
-        8,
-        10,
-        73
-      ],
-      "spiegazione": "1.000.500.090 = 1 uG + 5 hk + 9 da."
-    },
-    {
-      "id": "L11-E-008",
-      "livello": 11,
-      "tipologia": "E",
-      "fascia": "miliardi",
-      "numero": 50950070050,
-      "valoriPosizionali": [
-        "daG",
-        "hM",
-        "daM",
-        "dak",
-        "da"
-      ],
-      "testo": "Qual è la scomposizione additiva (somma dei valori) di 50.950.070.050?",
-      "opzioni": [
-        "5.000.000.000 + 900.000.000 + 50.000.000 + 70.000 + 50",
-        "900.000.000 + 50.000.000 + 70.000 + 50",
-        "500.000.000.000 + 900.000.000 + 50.000.000 + 70.000 + 50",
-        "50.000.000.000 + 900.000.000 + 50.000.000 + 70.000 + 50"
-      ],
-      "corretta": 3,
-      "hint": "Per ogni cifra non nulla scrivi il suo valore (cifra × valore della posizione) e uniscili con \"+\".",
-      "audience": [
-        10,
-        16,
-        19,
-        55
-      ],
-      "spiegazione": "50.950.070.050 = 50.000.000.000 + 900.000.000 + 50.000.000 + 70.000 + 50."
-    },
-    {
-      "id": "L11-F-009",
-      "livello": 11,
-      "tipologia": "F",
-      "fascia": "miliardi",
-      "numero": 25000030870,
-      "valoriPosizionali": [
-        "da",
-        "h",
-        "dak",
-        "uG",
-        "daG"
-      ],
-      "testo": "Qual è la notazione polinomiale di 25.000.030.870, includendo i termini con fattore zero?",
-      "opzioni": [
-        "(2×10.000.000.000)+(5×1.000.000.000)+(0×100.000.000)+(0×10.000.000)+(0×1.000.000)+(0×100.000)+(3×10.000)+(0×1000)+(8×100)+(7×10)",
-        "(2×10.000.000.000)+(5×10.000.000.000)+(0×100.000.000)+(0×10.000.000)+(0×1.000.000)+(0×100.000)+(3×10.000)+(0×1000)+(8×100)+(7×10)",
-        "(2×100.000.000.000)+(5×1.000.000.000)+(0×100.000.000)+(0×10.000.000)+(0×1.000.000)+(0×100.000)+(3×10.000)+(0×1000)+(8×100)+(7×10)",
-        "(3×10.000.000.000)+(5×1.000.000.000)+(0×100.000.000)+(0×10.000.000)+(0×1.000.000)+(0×100.000)+(3×10.000)+(0×1000)+(8×100)+(7×10)"
-      ],
-      "corretta": 0,
-      "hint": "Ogni cifra va moltiplicata per la potenza di 10 della sua posizione.",
-      "audience": [
-        75,
-        7,
-        6,
-        12
-      ],
-      "spiegazione": "25.000.030.870 = (2×10.000.000.000)+(5×1.000.000.000)+(0×100.000.000)+(0×10.000.000)+(0×1.000.000)+(0×100.000)+(3×10.000)+(0×1000)+(8×100)+(7×10)."
-    },
-    {
-      "id": "L11-C-010",
-      "livello": 11,
-      "tipologia": "C",
-      "fascia": "miliardi",
-      "numero": 60001022000,
-      "valoriPosizionali": [
-        "daG",
-        "uM",
-        "dak",
-        "uk"
-      ],
-      "testo": "Qual è la scomposizione per valori posizionali del numero 60.001.022.000?",
-      "opzioni": [
-        "3 uk + 1 uM + 2 dak + 6 daG",
-        "1 uM + 6 daG + 2 dak + 1 uk",
-        "6 daG + 1 uM + 2 dak + 2 uk",
-        "2 dak + 2 h + 6 daG + 1 uM"
-      ],
-      "corretta": 2,
-      "hint": "Elenca le cifre non nulle, ciascuna con il codice del suo valore posizionale: l'ordine non conta, conta il valore.",
+      "corretta": 1,
+      "hint": "Ogni cifra va moltiplicata per la potenza di 10 della sua posizione (10⁰ = 1).",
       "audience": [
         5,
-        13,
-        74,
-        8
+        76,
+        15,
+        4
       ],
-      "spiegazione": "60.001.022.000 = 6 daG + 1 uM + 2 dak + 2 uk."
-    },
-    {
-      "id": "L11-E-011",
-      "livello": 11,
-      "tipologia": "E",
-      "fascia": "miliardi",
-      "numero": 60020500050,
-      "valoriPosizionali": [
-        "daG",
-        "daM",
-        "hk",
-        "da"
-      ],
-      "testo": "Qual è la scomposizione additiva (somma dei valori) di 60.020.500.050?",
-      "opzioni": [
-        "60.000.000.000 + 20.000.000 + 500.000 + 50",
-        "20.000.000 + 500.000 + 50",
-        "6.000.000.000 + 20.000.000 + 500.000 + 50",
-        "600.000.000.000 + 20.000.000 + 500.000 + 50"
-      ],
-      "corretta": 0,
-      "hint": "Per ogni cifra non nulla scrivi il suo valore (cifra × valore della posizione) e uniscili con \"+\".",
-      "audience": [
-        67,
-        12,
-        8,
-        13
-      ],
-      "spiegazione": "60.020.500.050 = 60.000.000.000 + 20.000.000 + 500.000 + 50."
-    },
-    {
-      "id": "L11-F-012",
-      "livello": 11,
-      "tipologia": "F",
-      "fascia": "miliardi",
-      "numero": 40039050008,
-      "valoriPosizionali": [
-        "u",
-        "dak",
-        "uM",
-        "daM",
-        "daG"
-      ],
-      "testo": "Qual è la notazione polinomiale di 40.039.050.008, includendo i termini con fattore zero?",
-      "opzioni": [
-        "(4×10.000.000.000)+(0×1.000.000.000)+(0×100.000.000)+(3×10.000.000)+(9×1.000.000)+(0×100.000)+(5×10.000)+(0×1000)+(0×100)+(0×10)+(8×1)",
-        "(4×100.000.000.000)+(0×1.000.000.000)+(0×100.000.000)+(3×10.000.000)+(9×1.000.000)+(0×100.000)+(5×10.000)+(0×1000)+(0×100)+(0×10)+(8×1)",
-        "(4×10.000.000.000)+(0×1.000.000.000)+(0×100.000.000)+(3×100.000.000)+(9×1.000.000)+(0×100.000)+(5×10.000)+(0×1000)+(0×100)+(0×10)+(8×1)",
-        "(5×10.000.000.000)+(0×1.000.000.000)+(0×100.000.000)+(3×10.000.000)+(9×1.000.000)+(0×100.000)+(5×10.000)+(0×1000)+(0×100)+(0×10)+(8×1)"
-      ],
-      "corretta": 0,
-      "hint": "Ogni cifra va moltiplicata per la potenza di 10 della sua posizione.",
-      "audience": [
-        74,
-        5,
-        8,
-        13
-      ],
-      "spiegazione": "40.039.050.008 = (4×10.000.000.000)+(0×1.000.000.000)+(0×100.000.000)+(3×10.000.000)+(9×1.000.000)+(0×100.000)+(5×10.000)+(0×1000)+(0×100)+(0×10)+(8×1)."
+      "spiegazione": "770.060.000.000 = 7×10¹¹ + 7×10¹⁰ + 0×10⁹ + 0×10⁸ + 6×10⁷."
     },
     {
       "id": "L12-C-001",
       "livello": 12,
       "tipologia": "C",
       "fascia": "miliardi",
-      "numero": 75065000070,
+      "numero": 2005000830,
       "valoriPosizionali": [
-        "daG",
         "uG",
-        "daM",
         "uM",
+        "h",
         "da"
       ],
-      "testo": "Qual è la scomposizione per valori posizionali del numero 75.065.000.070?",
+      "testo": "Qual è la scomposizione per valori posizionali del numero 2.005.000.830?",
       "opzioni": [
-        "6 da + 5 uG + 5 uM + 6 daM + 7 daG",
-        "8 da + 5 uG + 5 uM + 6 daM + 7 daG",
-        "7 daG + 5 uG + 7 h + 5 uM + 6 daM",
-        "7 da + 7 daG + 6 daM + 5 uM + 5 uG"
+        "5 uM + 8 h + 2 uG + 2 da",
+        "8 h + 3 da + 2 uG + 5 uM",
+        "2 uG + 8 h + 4 da + 5 uM",
+        "2 uG + 5 uM + 3 u + 8 h"
       ],
-      "corretta": 3,
+      "corretta": 1,
       "hint": "Elenca le cifre non nulle, ciascuna con il codice del suo valore posizionale: l'ordine non conta, conta il valore.",
       "audience": [
-        16,
-        5,
-        15,
-        64
+        11,
+        70,
+        10,
+        9
       ],
-      "spiegazione": "75.065.000.070 = 7 daG + 5 uG + 6 daM + 5 uM + 7 da."
+      "spiegazione": "2.005.000.830 = 2 uG + 5 uM + 8 h + 3 da."
     },
     {
       "id": "L12-F-002",
       "livello": 12,
       "tipologia": "F",
       "fascia": "miliardi",
-      "numero": 4005000300,
+      "numero": 609080040008,
       "valoriPosizionali": [
-        "h",
-        "uM",
-        "uG"
+        "u",
+        "dak",
+        "daM",
+        "uG",
+        "hG"
       ],
-      "testo": "Qual è la notazione polinomiale di 4.005.000.300?",
+      "testo": "Qual è la notazione polinomiale di 609.080.040.008, includendo i termini con fattore zero?",
       "opzioni": [
-        "(4×10.000.000.000)+(5×1.000.000)+(3×100)",
-        "(4×1.000.000.000)+(5×10.000.000)+(3×100)",
-        "(5×1.000.000.000)+(5×1.000.000)+(3×100)",
-        "(4×1.000.000.000)+(5×1.000.000)+(3×100)"
+        "(6×1.000.000.000.000)+(0×10.000.000.000)+(9×1.000.000.000)+(0×100.000.000)+(8×10.000.000)+(0×1.000.000)+(0×100.000)+(4×10.000)+(0×1000)+(0×100)+(0×10)+(8×1)",
+        "(6×100.000.000.000)+(0×10.000.000.000)+(9×10.000.000.000)+(0×100.000.000)+(8×10.000.000)+(0×1.000.000)+(0×100.000)+(4×10.000)+(0×1000)+(0×100)+(0×10)+(8×1)",
+        "(7×100.000.000.000)+(0×10.000.000.000)+(9×1.000.000.000)+(0×100.000.000)+(8×10.000.000)+(0×1.000.000)+(0×100.000)+(4×10.000)+(0×1000)+(0×100)+(0×10)+(8×1)",
+        "(6×100.000.000.000)+(0×10.000.000.000)+(9×1.000.000.000)+(0×100.000.000)+(8×10.000.000)+(0×1.000.000)+(0×100.000)+(4×10.000)+(0×1000)+(0×100)+(0×10)+(8×1)"
       ],
       "corretta": 3,
       "hint": "Ogni cifra va moltiplicata per la potenza di 10 della sua posizione.",
       "audience": [
-        12,
-        12,
-        3,
-        73
+        10,
+        8,
+        13,
+        69
       ],
-      "spiegazione": "4.005.000.300 = (4×1.000.000.000)+(5×1.000.000)+(3×100)."
+      "spiegazione": "609.080.040.008 = (6×100.000.000.000)+(0×10.000.000.000)+(9×1.000.000.000)+(0×100.000.000)+(8×10.000.000)+(0×1.000.000)+(0×100.000)+(4×10.000)+(0×1000)+(0×100)+(0×10)+(8×1)."
     },
     {
       "id": "L12-G-003",
       "livello": 12,
       "tipologia": "G",
       "fascia": "miliardi",
-      "numero": 9999900000,
+      "numero": 9999997500,
       "valoriPosizionali": [
+        "h",
+        "uk",
+        "dak",
         "hk",
         "uM",
         "daM",
         "hM",
         "uG"
       ],
-      "testo": "Quanto manca a 9.999.900.000 per raggiungere 10.000.000.000?",
+      "testo": "Quanto manca a 9.999.997.500 per raggiungere 10.000.000.000?",
       "opzioni": [
-        "1.000.000",
-        "100.000",
-        "10.000",
-        "200.000"
+        "250",
+        "5000",
+        "25.000",
+        "2500"
       ],
-      "corretta": 1,
-      "hint": "Fai 10.000.000.000 − 9.999.900.000: completa prima le posizioni più piccole.",
+      "corretta": 3,
+      "hint": "Fai 10.000.000.000 − 9.999.997.500: completa prima le posizioni più piccole.",
       "audience": [
-        10,
-        78,
-        4,
-        8
+        14,
+        14,
+        16,
+        56
       ],
-      "spiegazione": "10.000.000.000 − 9.999.900.000 = 100.000."
+      "spiegazione": "10.000.000.000 − 9.999.997.500 = 2500."
     },
     {
-      "id": "L12-C-004",
+      "id": "L12-H-004",
+      "livello": 12,
+      "tipologia": "H",
+      "fascia": "miliardi",
+      "numero": 707009000002,
+      "valoriPosizionali": [
+        "u",
+        "uM",
+        "uG",
+        "hG"
+      ],
+      "testo": "Qual è la scomposizione polinomiale di 707.009.000.002 con le potenze del 10?",
+      "opzioni": [
+        "7×10¹¹ + 7×10⁹ + 9×10⁶ + 2×10⁰",
+        "7×10¹⁰ + 7×10⁹ + 9×10⁶ + 2×10⁰",
+        "7×10¹¹ + 7×10¹⁰ + 9×10⁶ + 2×10⁰",
+        "8×10¹¹ + 7×10⁹ + 9×10⁶ + 2×10⁰"
+      ],
+      "corretta": 0,
+      "hint": "Ogni cifra va moltiplicata per la potenza di 10 della sua posizione (10⁰ = 1).",
+      "audience": [
+        77,
+        12,
+        4,
+        7
+      ],
+      "spiegazione": "707.009.000.002 = 7×10¹¹ + 7×10⁹ + 9×10⁶ + 2×10⁰."
+    },
+    {
+      "id": "L12-C-005",
       "livello": 12,
       "tipologia": "C",
       "fascia": "miliardi",
-      "numero": 3070020009,
+      "numero": 4600006050,
       "valoriPosizionali": [
         "uG",
-        "daM",
-        "dak",
-        "u"
+        "hM",
+        "uk",
+        "da"
       ],
-      "testo": "Qual è la scomposizione per valori posizionali del numero 3.070.020.009?",
+      "testo": "Qual è la scomposizione per valori posizionali del numero 4.600.006.050?",
       "opzioni": [
-        "3 uG + 9 da + 7 daM + 2 dak",
-        "3 uG + 2 dak + 8 u + 7 daM",
-        "9 u + 3 uG + 2 dak + 7 daM",
-        "3 dak + 3 uG + 7 daM + 9 u"
+        "4 uG + 6 uk + 6 hM + 5 h",
+        "6 hM + 6 uk + 4 uG + 6 da",
+        "4 uG + 6 hM + 6 uk + 4 da",
+        "4 uG + 6 hM + 5 da + 6 uk"
       ],
-      "corretta": 2,
+      "corretta": 3,
       "hint": "Elenca le cifre non nulle, ciascuna con il codice del suo valore posizionale: l'ordine non conta, conta il valore.",
       "audience": [
-        9,
-        10,
-        69,
-        12
+        4,
+        11,
+        13,
+        72
       ],
-      "spiegazione": "3.070.020.009 = 3 uG + 7 daM + 2 dak + 9 u."
+      "spiegazione": "4.600.006.050 = 4 uG + 6 hM + 6 uk + 5 da."
     },
     {
-      "id": "L12-F-005",
+      "id": "L12-F-006",
       "livello": 12,
       "tipologia": "F",
       "fascia": "miliardi",
-      "numero": 8501802000,
+      "numero": 75050600000,
       "valoriPosizionali": [
-        "uk",
         "hk",
-        "uM",
-        "hM",
-        "uG"
+        "daM",
+        "uG",
+        "daG"
       ],
-      "testo": "Qual è la notazione polinomiale di 8.501.802.000?",
+      "testo": "Qual è la notazione polinomiale di 75.050.600.000, includendo i termini con fattore zero?",
       "opzioni": [
-        "(8×1.000.000.000)+(5×100.000.000)+(1×1.000.000)+(8×100.000)+(2×1000)",
-        "(9×1.000.000.000)+(5×100.000.000)+(1×1.000.000)+(8×100.000)+(2×1000)",
-        "(8×1.000.000.000)+(5×1.000.000.000)+(1×1.000.000)+(8×100.000)+(2×1000)",
-        "(8×10.000.000.000)+(5×100.000.000)+(1×1.000.000)+(8×100.000)+(2×1000)"
+        "(7×10.000.000.000)+(5×10.000.000.000)+(0×100.000.000)+(5×10.000.000)+(0×1.000.000)+(6×100.000)",
+        "(7×10.000.000.000)+(5×1.000.000.000)+(0×100.000.000)+(5×10.000.000)+(0×1.000.000)+(6×100.000)",
+        "(7×100.000.000.000)+(5×1.000.000.000)+(0×100.000.000)+(5×10.000.000)+(0×1.000.000)+(6×100.000)",
+        "(8×10.000.000.000)+(5×1.000.000.000)+(0×100.000.000)+(5×10.000.000)+(0×1.000.000)+(6×100.000)"
       ],
-      "corretta": 0,
+      "corretta": 1,
       "hint": "Ogni cifra va moltiplicata per la potenza di 10 della sua posizione.",
       "audience": [
-        60,
-        13,
-        12,
-        15
+        6,
+        68,
+        17,
+        9
       ],
-      "spiegazione": "8.501.802.000 = (8×1.000.000.000)+(5×100.000.000)+(1×1.000.000)+(8×100.000)+(2×1000)."
+      "spiegazione": "75.050.600.000 = (7×10.000.000.000)+(5×1.000.000.000)+(0×100.000.000)+(5×10.000.000)+(0×1.000.000)+(6×100.000)."
     },
     {
-      "id": "L12-G-006",
+      "id": "L12-G-007",
       "livello": 12,
       "tipologia": "G",
       "fascia": "miliardi",
-      "numero": 9999999800,
+      "numero": 9999999980,
       "valoriPosizionali": [
+        "da",
         "h",
         "uk",
         "dak",
@@ -3917,85 +3943,260 @@
         "hM",
         "uG"
       ],
-      "testo": "Quanto manca a 9.999.999.800 per raggiungere 10.000.000.000?",
+      "testo": "Quanto manca a 9.999.999.980 per raggiungere 10.000.000.000?",
       "opzioni": [
+        "40",
+        "20",
         "200",
-        "2000",
-        "400",
-        "20"
+        "2"
       ],
-      "corretta": 0,
-      "hint": "Fai 10.000.000.000 − 9.999.999.800: completa prima le posizioni più piccole.",
+      "corretta": 1,
+      "hint": "Fai 10.000.000.000 − 9.999.999.980: completa prima le posizioni più piccole.",
       "audience": [
-        61,
-        10,
-        21,
-        8
+        6,
+        74,
+        7,
+        13
       ],
-      "spiegazione": "10.000.000.000 − 9.999.999.800 = 200."
+      "spiegazione": "10.000.000.000 − 9.999.999.980 = 20."
     },
     {
-      "id": "L12-C-007",
+      "id": "L12-H-008",
+      "livello": 12,
+      "tipologia": "H",
+      "fascia": "miliardi",
+      "numero": 301200008070,
+      "valoriPosizionali": [
+        "da",
+        "uk",
+        "hM",
+        "uG",
+        "hG"
+      ],
+      "testo": "Qual è la scomposizione polinomiale di 301.200.008.070 con le potenze del 10, includendo i termini con fattore zero?",
+      "opzioni": [
+        "3×10¹⁰ + 0×10¹⁰ + 1×10⁹ + 2×10⁸ + 0×10⁷ + 0×10⁶ + 0×10⁵ + 0×10⁴ + 8×10³ + 0×10² + 7×10¹",
+        "4×10¹¹ + 0×10¹⁰ + 1×10⁹ + 2×10⁸ + 0×10⁷ + 0×10⁶ + 0×10⁵ + 0×10⁴ + 8×10³ + 0×10² + 7×10¹",
+        "3×10¹¹ + 0×10¹⁰ + 1×10¹⁰ + 2×10⁸ + 0×10⁷ + 0×10⁶ + 0×10⁵ + 0×10⁴ + 8×10³ + 0×10² + 7×10¹",
+        "3×10¹¹ + 0×10¹⁰ + 1×10⁹ + 2×10⁸ + 0×10⁷ + 0×10⁶ + 0×10⁵ + 0×10⁴ + 8×10³ + 0×10² + 7×10¹"
+      ],
+      "corretta": 3,
+      "hint": "Ogni cifra va moltiplicata per la potenza di 10 della sua posizione (10⁰ = 1).",
+      "audience": [
+        11,
+        8,
+        11,
+        70
+      ],
+      "spiegazione": "301.200.008.070 = 3×10¹¹ + 0×10¹⁰ + 1×10⁹ + 2×10⁸ + 0×10⁷ + 0×10⁶ + 0×10⁵ + 0×10⁴ + 8×10³ + 0×10² + 7×10¹."
+    },
+    {
+      "id": "L12-C-009",
       "livello": 12,
       "tipologia": "C",
       "fascia": "miliardi",
-      "numero": 8040008200,
+      "numero": 8109010007,
       "valoriPosizionali": [
         "uG",
-        "daM",
-        "uk",
-        "h"
+        "hM",
+        "uM",
+        "dak",
+        "u"
       ],
-      "testo": "Qual è la scomposizione per valori posizionali del numero 8.040.008.200?",
+      "testo": "Qual è la scomposizione per valori posizionali del numero 8.109.010.007?",
       "opzioni": [
-        "2 h + 8 uG + 8 uk + 4 daM",
-        "1 h + 4 daM + 8 uG + 8 uk",
-        "3 h + 8 uk + 8 uG + 4 daM",
-        "2 da + 8 uk + 4 daM + 8 uG"
+        "1 hM + 9 uM + 8 uG + 1 dak + 7 u",
+        "1 hM + 8 u + 1 dak + 8 uG + 9 uM",
+        "6 u + 1 hM + 9 uM + 1 dak + 8 uG",
+        "7 da + 1 hM + 8 uG + 1 dak + 9 uM"
       ],
       "corretta": 0,
       "hint": "Elenca le cifre non nulle, ciascuna con il codice del suo valore posizionale: l'ordine non conta, conta il valore.",
       "audience": [
-        78,
+        73,
         8,
-        9,
-        5
+        10,
+        9
       ],
-      "spiegazione": "8.040.008.200 = 8 uG + 4 daM + 8 uk + 2 h."
+      "spiegazione": "8.109.010.007 = 8 uG + 1 hM + 9 uM + 1 dak + 7 u."
     },
     {
-      "id": "L12-F-008",
+      "id": "L12-F-010",
       "livello": 12,
       "tipologia": "F",
       "fascia": "miliardi",
-      "numero": 20700450900,
+      "numero": 30450000004,
       "valoriPosizionali": [
-        "h",
-        "dak",
-        "hk",
+        "u",
+        "daM",
         "hM",
         "daG"
       ],
-      "testo": "Qual è la notazione polinomiale di 20.700.450.900, includendo i termini con fattore zero?",
+      "testo": "Qual è la notazione polinomiale di 30.450.000.004?",
       "opzioni": [
-        "(2×10.000.000.000)+(0×1.000.000.000)+(7×1.000.000.000)+(0×10.000.000)+(0×1.000.000)+(4×100.000)+(5×10.000)+(0×1000)+(9×100)",
-        "(2×10.000.000.000)+(0×1.000.000.000)+(7×100.000.000)+(0×10.000.000)+(0×1.000.000)+(4×100.000)+(5×10.000)+(0×1000)+(9×100)",
-        "(3×10.000.000.000)+(0×1.000.000.000)+(7×100.000.000)+(0×10.000.000)+(0×1.000.000)+(4×100.000)+(5×10.000)+(0×1000)+(9×100)",
-        "(2×100.000.000.000)+(0×1.000.000.000)+(7×100.000.000)+(0×10.000.000)+(0×1.000.000)+(4×100.000)+(5×10.000)+(0×1000)+(9×100)"
+        "(3×10.000.000.000)+(4×100.000.000)+(5×10.000.000)+(4×1)",
+        "(3×10.000.000.000)+(4×1.000.000.000)+(5×10.000.000)+(4×1)",
+        "(3×100.000.000.000)+(4×100.000.000)+(5×10.000.000)+(4×1)",
+        "(4×10.000.000.000)+(4×100.000.000)+(5×10.000.000)+(4×1)"
       ],
-      "corretta": 1,
+      "corretta": 0,
       "hint": "Ogni cifra va moltiplicata per la potenza di 10 della sua posizione.",
       "audience": [
-        11,
-        60,
-        10,
-        19
+        73,
+        8,
+        9,
+        10
       ],
-      "spiegazione": "20.700.450.900 = (2×10.000.000.000)+(0×1.000.000.000)+(7×100.000.000)+(0×10.000.000)+(0×1.000.000)+(4×100.000)+(5×10.000)+(0×1000)+(9×100)."
+      "spiegazione": "30.450.000.004 = (3×10.000.000.000)+(4×100.000.000)+(5×10.000.000)+(4×1)."
     },
     {
-      "id": "L12-G-009",
+      "id": "L12-G-011",
       "livello": 12,
+      "tipologia": "G",
+      "fascia": "miliardi",
+      "numero": 9999999990,
+      "valoriPosizionali": [
+        "da",
+        "h",
+        "uk",
+        "dak",
+        "hk",
+        "uM",
+        "daM",
+        "hM",
+        "uG"
+      ],
+      "testo": "Quanto manca a 9.999.999.990 per raggiungere 10.000.000.000?",
+      "opzioni": [
+        "10",
+        "1",
+        "20",
+        "100"
+      ],
+      "corretta": 0,
+      "hint": "Fai 10.000.000.000 − 9.999.999.990: completa prima le posizioni più piccole.",
+      "audience": [
+        60,
+        13,
+        7,
+        20
+      ],
+      "spiegazione": "10.000.000.000 − 9.999.999.990 = 10."
+    },
+    {
+      "id": "L12-H-012",
+      "livello": 12,
+      "tipologia": "H",
+      "fascia": "miliardi",
+      "numero": 55009000000,
+      "valoriPosizionali": [
+        "uM",
+        "uG",
+        "daG"
+      ],
+      "testo": "Qual è la scomposizione polinomiale di 55.009.000.000 con le potenze del 10, includendo i termini con fattore zero?",
+      "opzioni": [
+        "5×10⁹ + 5×10⁹ + 0×10⁸ + 0×10⁷ + 9×10⁶",
+        "5×10¹¹ + 5×10⁹ + 0×10⁸ + 0×10⁷ + 9×10⁶",
+        "6×10¹⁰ + 5×10⁹ + 0×10⁸ + 0×10⁷ + 9×10⁶",
+        "5×10¹⁰ + 5×10⁹ + 0×10⁸ + 0×10⁷ + 9×10⁶"
+      ],
+      "corretta": 3,
+      "hint": "Ogni cifra va moltiplicata per la potenza di 10 della sua posizione (10⁰ = 1).",
+      "audience": [
+        8,
+        10,
+        15,
+        67
+      ],
+      "spiegazione": "55.009.000.000 = 5×10¹⁰ + 5×10⁹ + 0×10⁸ + 0×10⁷ + 9×10⁶."
+    },
+    {
+      "id": "L13-B-001",
+      "livello": 13,
+      "tipologia": "B",
+      "fascia": "miliardi",
+      "numero": 7000108301,
+      "valoriPosizionali": [
+        "uk"
+      ],
+      "testo": "Nel numero 7.000.108.301, a quale valore corrisponde la cifra 8?",
+      "opzioni": [
+        "800",
+        "800.000",
+        "80.000",
+        "8000"
+      ],
+      "corretta": 3,
+      "hint": "La cifra 8 è nella posizione uk: moltiplicala per 1000.",
+      "audience": [
+        6,
+        12,
+        10,
+        72
+      ],
+      "spiegazione": "La cifra 8 occupa uk, quindi vale 8 × 1000 = 8000."
+    },
+    {
+      "id": "L13-C-002",
+      "livello": 13,
+      "tipologia": "C",
+      "fascia": "miliardi",
+      "numero": 200000700001,
+      "valoriPosizionali": [
+        "hG",
+        "hk",
+        "u"
+      ],
+      "testo": "Qual è la scomposizione per valori posizionali del numero 200.000.700.001?",
+      "opzioni": [
+        "7 hk + 2 u + 2 hG",
+        "1 u + 2 hG + 7 hk",
+        "1 da + 7 hk + 2 hG",
+        "1 u + 8 hk + 2 hG"
+      ],
+      "corretta": 1,
+      "hint": "Elenca le cifre non nulle, ciascuna con il codice del suo valore posizionale: l'ordine non conta, conta il valore.",
+      "audience": [
+        12,
+        71,
+        9,
+        8
+      ],
+      "spiegazione": "200.000.700.001 = 2 hG + 7 hk + 1 u."
+    },
+    {
+      "id": "L13-F-003",
+      "livello": 13,
+      "tipologia": "F",
+      "fascia": "miliardi",
+      "numero": 70000085090,
+      "valoriPosizionali": [
+        "da",
+        "uk",
+        "dak",
+        "daG"
+      ],
+      "testo": "Qual è la notazione polinomiale di 70.000.085.090, includendo i termini con fattore zero?",
+      "opzioni": [
+        "(7×100.000.000.000)+(0×1.000.000.000)+(0×100.000.000)+(0×10.000.000)+(0×1.000.000)+(0×100.000)+(8×10.000)+(5×1000)+(0×100)+(9×10)",
+        "(8×10.000.000.000)+(0×1.000.000.000)+(0×100.000.000)+(0×10.000.000)+(0×1.000.000)+(0×100.000)+(8×10.000)+(5×1000)+(0×100)+(9×10)",
+        "(7×10.000.000.000)+(0×1.000.000.000)+(0×100.000.000)+(0×10.000.000)+(0×1.000.000)+(0×100.000)+(8×10.000)+(5×1000)+(0×100)+(9×10)",
+        "(7×10.000.000.000)+(0×1.000.000.000)+(0×100.000.000)+(0×10.000.000)+(0×1.000.000)+(0×100.000)+(8×100.000)+(5×1000)+(0×100)+(9×10)"
+      ],
+      "corretta": 2,
+      "hint": "Ogni cifra va moltiplicata per la potenza di 10 della sua posizione.",
+      "audience": [
+        15,
+        9,
+        58,
+        18
+      ],
+      "spiegazione": "70.000.085.090 = (7×10.000.000.000)+(0×1.000.000.000)+(0×100.000.000)+(0×10.000.000)+(0×1.000.000)+(0×100.000)+(8×10.000)+(5×1000)+(0×100)+(9×10)."
+    },
+    {
+      "id": "L13-G-004",
+      "livello": 13,
       "tipologia": "G",
       "fascia": "miliardi",
       "numero": 9999998500,
@@ -4012,80 +4213,137 @@
       "testo": "Quanto manca a 9.999.998.500 per raggiungere 10.000.000.000?",
       "opzioni": [
         "15.000",
+        "1500",
         "150",
-        "3000",
-        "1500"
+        "3000"
       ],
-      "corretta": 3,
+      "corretta": 1,
       "hint": "Fai 10.000.000.000 − 9.999.998.500: completa prima le posizioni più piccole.",
       "audience": [
+        11,
+        74,
         7,
-        12,
-        7,
-        74
+        8
       ],
       "spiegazione": "10.000.000.000 − 9.999.998.500 = 1500."
     },
     {
-      "id": "L12-C-010",
-      "livello": 12,
-      "tipologia": "C",
+      "id": "L13-H-005",
+      "livello": 13,
+      "tipologia": "H",
       "fascia": "miliardi",
-      "numero": 770030000400,
+      "numero": 25090000000,
       "valoriPosizionali": [
-        "hG",
-        "daG",
         "daM",
-        "h"
-      ],
-      "testo": "Qual è la scomposizione per valori posizionali del numero 770.030.000.400?",
-      "opzioni": [
-        "3 daM + 4 h + 7 daG + 7 hG",
-        "3 daM + 4 uk + 7 hG + 7 daG",
-        "5 h + 7 daG + 3 daM + 7 hG",
-        "7 daG + 3 h + 3 daM + 7 hG"
-      ],
-      "corretta": 0,
-      "hint": "Elenca le cifre non nulle, ciascuna con il codice del suo valore posizionale: l'ordine non conta, conta il valore.",
-      "audience": [
-        57,
-        19,
-        7,
-        17
-      ],
-      "spiegazione": "770.030.000.400 = 7 hG + 7 daG + 3 daM + 4 h."
-    },
-    {
-      "id": "L12-F-011",
-      "livello": 12,
-      "tipologia": "F",
-      "fascia": "miliardi",
-      "numero": 60000080400,
-      "valoriPosizionali": [
-        "h",
-        "dak",
+        "uG",
         "daG"
       ],
-      "testo": "Qual è la notazione polinomiale di 60.000.080.400?",
+      "testo": "Qual è la scomposizione polinomiale di 25.090.000.000 con le potenze del 10, includendo i termini con fattore zero?",
       "opzioni": [
-        "(6×10.000.000.000)+(8×10.000)+(4×100)",
-        "(7×10.000.000.000)+(8×10.000)+(4×100)",
-        "(6×10.000.000.000)+(8×100.000)+(4×100)",
-        "(6×100.000.000.000)+(8×10.000)+(4×100)"
+        "3×10¹⁰ + 5×10⁹ + 0×10⁸ + 9×10⁷",
+        "2×10¹⁰ + 5×10⁹ + 0×10⁸ + 9×10⁷",
+        "2×10⁹ + 5×10⁹ + 0×10⁸ + 9×10⁷",
+        "2×10¹¹ + 5×10⁹ + 0×10⁸ + 9×10⁷"
       ],
-      "corretta": 0,
-      "hint": "Ogni cifra va moltiplicata per la potenza di 10 della sua posizione.",
+      "corretta": 1,
+      "hint": "Ogni cifra va moltiplicata per la potenza di 10 della sua posizione (10⁰ = 1).",
       "audience": [
-        60,
         7,
-        20,
-        13
+        56,
+        27,
+        10
       ],
-      "spiegazione": "60.000.080.400 = (6×10.000.000.000)+(8×10.000)+(4×100)."
+      "spiegazione": "25.090.000.000 = 2×10¹⁰ + 5×10⁹ + 0×10⁸ + 9×10⁷."
     },
     {
-      "id": "L12-G-012",
-      "livello": 12,
+      "id": "L13-B-006",
+      "livello": 13,
+      "tipologia": "B",
+      "fascia": "miliardi",
+      "numero": 400400600010,
+      "valoriPosizionali": [
+        "da"
+      ],
+      "testo": "Nel numero 400.400.600.010, a quale valore corrisponde la cifra 1?",
+      "opzioni": [
+        "100",
+        "1000",
+        "10",
+        "1"
+      ],
+      "corretta": 2,
+      "hint": "La cifra 1 è nella posizione da: moltiplicala per 10.",
+      "audience": [
+        17,
+        5,
+        70,
+        8
+      ],
+      "spiegazione": "La cifra 1 occupa da, quindi vale 1 × 10 = 10."
+    },
+    {
+      "id": "L13-C-007",
+      "livello": 13,
+      "tipologia": "C",
+      "fascia": "miliardi",
+      "numero": 1040903080,
+      "valoriPosizionali": [
+        "uG",
+        "daM",
+        "hk",
+        "uk",
+        "da"
+      ],
+      "testo": "Qual è la scomposizione per valori posizionali del numero 1.040.903.080?",
+      "opzioni": [
+        "7 da + 9 hk + 4 daM + 3 uk + 1 uG",
+        "4 daM + 1 uG + 3 uk + 9 hk + 8 h",
+        "9 da + 4 daM + 1 uG + 3 uk + 9 hk",
+        "3 uk + 9 hk + 8 da + 4 daM + 1 uG"
+      ],
+      "corretta": 3,
+      "hint": "Elenca le cifre non nulle, ciascuna con il codice del suo valore posizionale: l'ordine non conta, conta il valore.",
+      "audience": [
+        12,
+        10,
+        7,
+        71
+      ],
+      "spiegazione": "1.040.903.080 = 1 uG + 4 daM + 9 hk + 3 uk + 8 da."
+    },
+    {
+      "id": "L13-F-008",
+      "livello": 13,
+      "tipologia": "F",
+      "fascia": "miliardi",
+      "numero": 50007070026,
+      "valoriPosizionali": [
+        "u",
+        "da",
+        "dak",
+        "uM",
+        "daG"
+      ],
+      "testo": "Qual è la notazione polinomiale di 50.007.070.026, includendo i termini con fattore zero?",
+      "opzioni": [
+        "(5×10.000.000.000)+(0×1.000.000.000)+(0×100.000.000)+(0×10.000.000)+(7×10.000.000)+(0×100.000)+(7×10.000)+(0×1000)+(0×100)+(2×10)+(6×1)",
+        "(5×100.000.000.000)+(0×1.000.000.000)+(0×100.000.000)+(0×10.000.000)+(7×1.000.000)+(0×100.000)+(7×10.000)+(0×1000)+(0×100)+(2×10)+(6×1)",
+        "(5×10.000.000.000)+(0×1.000.000.000)+(0×100.000.000)+(0×10.000.000)+(7×1.000.000)+(0×100.000)+(7×10.000)+(0×1000)+(0×100)+(2×10)+(6×1)",
+        "(6×10.000.000.000)+(0×1.000.000.000)+(0×100.000.000)+(0×10.000.000)+(7×1.000.000)+(0×100.000)+(7×10.000)+(0×1000)+(0×100)+(2×10)+(6×1)"
+      ],
+      "corretta": 2,
+      "hint": "Ogni cifra va moltiplicata per la potenza di 10 della sua posizione.",
+      "audience": [
+        11,
+        17,
+        55,
+        17
+      ],
+      "spiegazione": "50.007.070.026 = (5×10.000.000.000)+(0×1.000.000.000)+(0×100.000.000)+(0×10.000.000)+(7×1.000.000)+(0×100.000)+(7×10.000)+(0×1000)+(0×100)+(2×10)+(6×1)."
+    },
+    {
+      "id": "L13-G-009",
+      "livello": 13,
       "tipologia": "G",
       "fascia": "miliardi",
       "numero": 9999500000,
@@ -4098,460 +4356,199 @@
       ],
       "testo": "Quanto manca a 9.999.500.000 per raggiungere 10.000.000.000?",
       "opzioni": [
-        "5.000.000",
         "1.000.000",
         "50.000",
+        "5.000.000",
         "500.000"
       ],
       "corretta": 3,
       "hint": "Fai 10.000.000.000 − 9.999.500.000: completa prima le posizioni più piccole.",
       "audience": [
-        7,
         8,
-        11,
-        74
+        19,
+        15,
+        58
       ],
       "spiegazione": "10.000.000.000 − 9.999.500.000 = 500.000."
     },
     {
-      "id": "L13-B-001",
+      "id": "L13-H-010",
       "livello": 13,
-      "tipologia": "B",
+      "tipologia": "H",
       "fascia": "miliardi",
-      "numero": 8000000013,
+      "numero": 200006700020,
       "valoriPosizionali": [
-        "da"
-      ],
-      "testo": "Nel numero 8.000.000.013, a quale valore corrisponde la cifra 1?",
-      "opzioni": [
-        "10",
-        "1000",
-        "100",
-        "1"
-      ],
-      "corretta": 0,
-      "hint": "La cifra 1 è nella posizione da: moltiplicala per 10.",
-      "audience": [
-        77,
-        6,
-        9,
-        8
-      ],
-      "spiegazione": "La cifra 1 occupa da, quindi vale 1 × 10 = 10."
-    },
-    {
-      "id": "L13-C-002",
-      "livello": 13,
-      "tipologia": "C",
-      "fascia": "miliardi",
-      "numero": 300090004000,
-      "valoriPosizionali": [
-        "hG",
-        "daM",
-        "uk"
-      ],
-      "testo": "Qual è la scomposizione per valori posizionali del numero 300.090.004.000?",
-      "opzioni": [
-        "4 uk + 9 daM + 3 hG",
-        "9 daM + 3 hG + 3 uk",
-        "9 daM + 3 hG + 5 uk",
-        "3 hG + 9 daM + 4 dak"
-      ],
-      "corretta": 0,
-      "hint": "Elenca le cifre non nulle, ciascuna con il codice del suo valore posizionale: l'ordine non conta, conta il valore.",
-      "audience": [
-        71,
-        13,
-        6,
-        10
-      ],
-      "spiegazione": "300.090.004.000 = 3 hG + 9 daM + 4 uk."
-    },
-    {
-      "id": "L13-F-003",
-      "livello": 13,
-      "tipologia": "F",
-      "fascia": "miliardi",
-      "numero": 6600080000,
-      "valoriPosizionali": [
-        "dak",
-        "hM",
-        "uG"
-      ],
-      "testo": "Qual è la notazione polinomiale di 6.600.080.000, includendo i termini con fattore zero?",
-      "opzioni": [
-        "(6×1.000.000.000)+(6×100.000.000)+(0×10.000.000)+(0×1.000.000)+(0×100.000)+(8×10.000)",
-        "(6×10.000.000.000)+(6×100.000.000)+(0×10.000.000)+(0×1.000.000)+(0×100.000)+(8×10.000)",
-        "(6×1.000.000.000)+(6×1.000.000.000)+(0×10.000.000)+(0×1.000.000)+(0×100.000)+(8×10.000)",
-        "(7×1.000.000.000)+(6×100.000.000)+(0×10.000.000)+(0×1.000.000)+(0×100.000)+(8×10.000)"
-      ],
-      "corretta": 0,
-      "hint": "Ogni cifra va moltiplicata per la potenza di 10 della sua posizione.",
-      "audience": [
-        69,
-        10,
-        10,
-        11
-      ],
-      "spiegazione": "6.600.080.000 = (6×1.000.000.000)+(6×100.000.000)+(0×10.000.000)+(0×1.000.000)+(0×100.000)+(8×10.000)."
-    },
-    {
-      "id": "L13-G-004",
-      "livello": 13,
-      "tipologia": "G",
-      "fascia": "miliardi",
-      "numero": 9999900000,
-      "valoriPosizionali": [
-        "hk",
-        "uM",
-        "daM",
-        "hM",
-        "uG"
-      ],
-      "testo": "Quanto manca a 9.999.900.000 per raggiungere 10.000.000.000?",
-      "opzioni": [
-        "10.000",
-        "1.000.000",
-        "100.000",
-        "200.000"
-      ],
-      "corretta": 2,
-      "hint": "Fai 10.000.000.000 − 9.999.900.000: completa prima le posizioni più piccole.",
-      "audience": [
-        15,
-        9,
-        59,
-        17
-      ],
-      "spiegazione": "10.000.000.000 − 9.999.900.000 = 100.000."
-    },
-    {
-      "id": "L13-B-005",
-      "livello": 13,
-      "tipologia": "B",
-      "fascia": "miliardi",
-      "numero": 300050010132,
-      "valoriPosizionali": [
-        "u"
-      ],
-      "testo": "Nel numero 300.050.010.132, a quale valore corrisponde la cifra 2?",
-      "opzioni": [
-        "200",
-        "2000",
-        "20",
-        "2"
-      ],
-      "corretta": 3,
-      "hint": "La cifra 2 è nella posizione u: moltiplicala per 1.",
-      "audience": [
-        12,
-        10,
-        7,
-        71
-      ],
-      "spiegazione": "La cifra 2 occupa u, quindi vale 2 × 1 = 2."
-    },
-    {
-      "id": "L13-C-006",
-      "livello": 13,
-      "tipologia": "C",
-      "fascia": "miliardi",
-      "numero": 50007070026,
-      "valoriPosizionali": [
-        "daG",
-        "uM",
-        "dak",
         "da",
-        "u"
-      ],
-      "testo": "Qual è la scomposizione per valori posizionali del numero 50.007.070.026?",
-      "opzioni": [
-        "2 da + 7 u + 5 daG + 7 dak + 7 uM",
-        "6 u + 3 da + 5 daG + 7 uM + 7 dak",
-        "5 u + 2 da + 7 dak + 7 uM + 5 daG",
-        "5 daG + 6 u + 2 da + 7 uM + 7 dak"
-      ],
-      "corretta": 3,
-      "hint": "Elenca le cifre non nulle, ciascuna con il codice del suo valore posizionale: l'ordine non conta, conta il valore.",
-      "audience": [
-        3,
-        12,
-        7,
-        78
-      ],
-      "spiegazione": "50.007.070.026 = 5 daG + 7 uM + 7 dak + 2 da + 6 u."
-    },
-    {
-      "id": "L13-F-007",
-      "livello": 13,
-      "tipologia": "F",
-      "fascia": "miliardi",
-      "numero": 9047400000,
-      "valoriPosizionali": [
         "hk",
         "uM",
-        "daM",
-        "uG"
-      ],
-      "testo": "Qual è la notazione polinomiale di 9.047.400.000, includendo i termini con fattore zero?",
-      "opzioni": [
-        "(9×10.000.000.000)+(0×100.000.000)+(4×10.000.000)+(7×1.000.000)+(4×100.000)",
-        "(9×1.000.000.000)+(0×100.000.000)+(4×10.000.000)+(7×1.000.000)+(4×100.000)",
-        "(8×1.000.000.000)+(0×100.000.000)+(4×10.000.000)+(7×1.000.000)+(4×100.000)",
-        "(9×1.000.000.000)+(0×100.000.000)+(4×100.000.000)+(7×1.000.000)+(4×100.000)"
-      ],
-      "corretta": 1,
-      "hint": "Ogni cifra va moltiplicata per la potenza di 10 della sua posizione.",
-      "audience": [
-        22,
-        65,
-        8,
-        5
-      ],
-      "spiegazione": "9.047.400.000 = (9×1.000.000.000)+(0×100.000.000)+(4×10.000.000)+(7×1.000.000)+(4×100.000)."
-    },
-    {
-      "id": "L13-G-008",
-      "livello": 13,
-      "tipologia": "G",
-      "fascia": "miliardi",
-      "numero": 9999900000,
-      "valoriPosizionali": [
-        "hk",
-        "uM",
-        "daM",
-        "hM",
-        "uG"
-      ],
-      "testo": "Quanto manca a 9.999.900.000 per raggiungere 10.000.000.000?",
-      "opzioni": [
-        "10.000",
-        "1.000.000",
-        "100.000",
-        "200.000"
-      ],
-      "corretta": 2,
-      "hint": "Fai 10.000.000.000 − 9.999.900.000: completa prima le posizioni più piccole.",
-      "audience": [
-        12,
-        4,
-        70,
-        14
-      ],
-      "spiegazione": "10.000.000.000 − 9.999.900.000 = 100.000."
-    },
-    {
-      "id": "L13-B-009",
-      "livello": 13,
-      "tipologia": "B",
-      "fascia": "miliardi",
-      "numero": 980000001097,
-      "valoriPosizionali": [
-        "u"
-      ],
-      "testo": "Nel numero 980.000.001.097, a quale valore corrisponde la cifra 7?",
-      "opzioni": [
-        "7000",
-        "7",
-        "70",
-        "700"
-      ],
-      "corretta": 1,
-      "hint": "La cifra 7 è nella posizione u: moltiplicala per 1.",
-      "audience": [
-        16,
-        55,
-        15,
-        14
-      ],
-      "spiegazione": "La cifra 7 occupa u, quindi vale 7 × 1 = 7."
-    },
-    {
-      "id": "L13-C-010",
-      "livello": 13,
-      "tipologia": "C",
-      "fascia": "miliardi",
-      "numero": 301000840080,
-      "valoriPosizionali": [
-        "hG",
-        "uG",
-        "hk",
-        "dak",
-        "da"
-      ],
-      "testo": "Qual è la scomposizione per valori posizionali del numero 301.000.840.080?",
-      "opzioni": [
-        "1 uG + 8 hk + 4 dak + 7 da + 3 hG",
-        "3 hG + 1 uG + 8 hk + 8 da + 4 dak",
-        "8 hk + 9 da + 3 hG + 4 dak + 1 uG",
-        "8 h + 4 dak + 8 hk + 3 hG + 1 uG"
-      ],
-      "corretta": 1,
-      "hint": "Elenca le cifre non nulle, ciascuna con il codice del suo valore posizionale: l'ordine non conta, conta il valore.",
-      "audience": [
-        13,
-        68,
-        7,
-        12
-      ],
-      "spiegazione": "301.000.840.080 = 3 hG + 1 uG + 8 hk + 4 dak + 8 da."
-    },
-    {
-      "id": "L13-F-011",
-      "livello": 13,
-      "tipologia": "F",
-      "fascia": "miliardi",
-      "numero": 850000042001,
-      "valoriPosizionali": [
-        "u",
-        "uk",
-        "dak",
-        "daG",
         "hG"
       ],
-      "testo": "Qual è la notazione polinomiale di 850.000.042.001, includendo i termini con fattore zero?",
+      "testo": "Qual è la scomposizione polinomiale di 200.006.700.020 con le potenze del 10, includendo i termini con fattore zero?",
       "opzioni": [
-        "(8×1.000.000.000.000)+(5×10.000.000.000)+(0×1.000.000.000)+(0×100.000.000)+(0×10.000.000)+(0×1.000.000)+(0×100.000)+(4×10.000)+(2×1000)+(0×100)+(0×10)+(1×1)",
-        "(8×100.000.000.000)+(5×10.000.000.000)+(0×1.000.000.000)+(0×100.000.000)+(0×10.000.000)+(0×1.000.000)+(0×100.000)+(4×10.000)+(2×1000)+(0×100)+(0×10)+(1×1)",
-        "(9×100.000.000.000)+(5×10.000.000.000)+(0×1.000.000.000)+(0×100.000.000)+(0×10.000.000)+(0×1.000.000)+(0×100.000)+(4×10.000)+(2×1000)+(0×100)+(0×10)+(1×1)",
-        "(8×100.000.000.000)+(5×100.000.000.000)+(0×1.000.000.000)+(0×100.000.000)+(0×10.000.000)+(0×1.000.000)+(0×100.000)+(4×10.000)+(2×1000)+(0×100)+(0×10)+(1×1)"
+        "3×10¹¹ + 0×10¹⁰ + 0×10⁹ + 0×10⁸ + 0×10⁷ + 6×10⁶ + 7×10⁵ + 0×10⁴ + 0×10³ + 0×10² + 2×10¹",
+        "2×10¹¹ + 0×10¹⁰ + 0×10⁹ + 0×10⁸ + 0×10⁷ + 6×10⁷ + 7×10⁵ + 0×10⁴ + 0×10³ + 0×10² + 2×10¹",
+        "2×10¹⁰ + 0×10¹⁰ + 0×10⁹ + 0×10⁸ + 0×10⁷ + 6×10⁶ + 7×10⁵ + 0×10⁴ + 0×10³ + 0×10² + 2×10¹",
+        "2×10¹¹ + 0×10¹⁰ + 0×10⁹ + 0×10⁸ + 0×10⁷ + 6×10⁶ + 7×10⁵ + 0×10⁴ + 0×10³ + 0×10² + 2×10¹"
       ],
-      "corretta": 1,
-      "hint": "Ogni cifra va moltiplicata per la potenza di 10 della sua posizione.",
+      "corretta": 3,
+      "hint": "Ogni cifra va moltiplicata per la potenza di 10 della sua posizione (10⁰ = 1).",
       "audience": [
-        15,
-        59,
-        5,
-        21
+        9,
+        12,
+        6,
+        73
       ],
-      "spiegazione": "850.000.042.001 = (8×100.000.000.000)+(5×10.000.000.000)+(0×1.000.000.000)+(0×100.000.000)+(0×10.000.000)+(0×1.000.000)+(0×100.000)+(4×10.000)+(2×1000)+(0×100)+(0×10)+(1×1)."
+      "spiegazione": "200.006.700.020 = 2×10¹¹ + 0×10¹⁰ + 0×10⁹ + 0×10⁸ + 0×10⁷ + 6×10⁶ + 7×10⁵ + 0×10⁴ + 0×10³ + 0×10² + 2×10¹."
     },
     {
-      "id": "L13-G-012",
+      "id": "L13-B-011",
       "livello": 13,
-      "tipologia": "G",
+      "tipologia": "B",
       "fascia": "miliardi",
-      "numero": 9999999990,
+      "numero": 7000304200,
       "valoriPosizionali": [
-        "da",
-        "h",
-        "uk",
-        "dak",
-        "hk",
-        "uM",
-        "daM",
-        "hM",
-        "uG"
+        "uk"
       ],
-      "testo": "Quanto manca a 9.999.999.990 per raggiungere 10.000.000.000?",
+      "testo": "Nel numero 7.000.304.200, a quale valore corrisponde la cifra 4?",
       "opzioni": [
-        "10",
-        "20",
-        "1",
-        "100"
+        "40.000",
+        "4000",
+        "400.000",
+        "400"
+      ],
+      "corretta": 1,
+      "hint": "La cifra 4 è nella posizione uk: moltiplicala per 1000.",
+      "audience": [
+        6,
+        71,
+        11,
+        12
+      ],
+      "spiegazione": "La cifra 4 occupa uk, quindi vale 4 × 1000 = 4000."
+    },
+    {
+      "id": "L13-C-012",
+      "livello": 13,
+      "tipologia": "C",
+      "fascia": "miliardi",
+      "numero": 300500007009,
+      "valoriPosizionali": [
+        "hG",
+        "hM",
+        "uk",
+        "u"
+      ],
+      "testo": "Qual è la scomposizione per valori posizionali del numero 300.500.007.009?",
+      "opzioni": [
+        "9 u + 7 uk + 5 hM + 3 hG",
+        "3 hG + 5 hM + 8 u + 7 uk",
+        "3 hG + 9 u + 8 uk + 5 hM",
+        "7 uk + 3 hG + 9 da + 5 hM"
       ],
       "corretta": 0,
-      "hint": "Fai 10.000.000.000 − 9.999.999.990: completa prima le posizioni più piccole.",
+      "hint": "Elenca le cifre non nulle, ciascuna con il codice del suo valore posizionale: l'ordine non conta, conta il valore.",
       "audience": [
-        75,
-        6,
-        14,
-        5
+        76,
+        5,
+        11,
+        8
       ],
-      "spiegazione": "10.000.000.000 − 9.999.999.990 = 10."
+      "spiegazione": "300.500.007.009 = 3 hG + 5 hM + 7 uk + 9 u."
     },
     {
       "id": "L14-C-001",
       "livello": 14,
       "tipologia": "C",
       "fascia": "miliardi",
-      "numero": 70010000090,
+      "numero": 6045090100,
       "valoriPosizionali": [
-        "daG",
+        "uG",
         "daM",
-        "da"
+        "uM",
+        "dak",
+        "h"
       ],
-      "testo": "Qual è la scomposizione per valori posizionali del numero 70.010.000.090?",
+      "testo": "Qual è la scomposizione per valori posizionali del numero 6.045.090.100?",
       "opzioni": [
-        "7 daG + 1 daM + 9 h",
-        "9 da + 7 daG + 1 daM",
-        "7 daG + 1 daM + 8 da",
-        "7 daG + 1 daM + 9 u"
+        "6 uG + 4 daM + 9 dak + 5 uM + 2 h",
+        "9 dak + 1 uk + 6 uG + 5 uM + 4 daM",
+        "9 dak + 4 daM + 6 uG + 1 da + 5 uM",
+        "4 daM + 6 uG + 5 uM + 9 dak + 1 h"
       ],
-      "corretta": 1,
+      "corretta": 3,
       "hint": "Elenca le cifre non nulle, ciascuna con il codice del suo valore posizionale: l'ordine non conta, conta il valore.",
       "audience": [
-        5,
-        56,
-        16,
-        23
+        8,
+        11,
+        18,
+        63
       ],
-      "spiegazione": "70.010.000.090 = 7 daG + 1 daM + 9 da."
+      "spiegazione": "6.045.090.100 = 6 uG + 4 daM + 5 uM + 9 dak + 1 h."
     },
     {
       "id": "L14-D-002",
       "livello": 14,
       "tipologia": "D",
       "fascia": "miliardi",
-      "numero": 302000009000,
+      "numero": 80090006000,
       "valoriPosizionali": [
         "uk",
-        "uG",
-        "hG"
+        "daM",
+        "daG"
       ],
-      "testo": "Scrivi in cifre: \"trecentodue miliardi novemila\".",
+      "testo": "Scrivi in cifre: \"ottanta miliardi novanta milioni seimila\".",
       "opzioni": [
-        "302.000.008.999",
-        "302.000.009.010",
-        "302.000.009.000",
-        "302.000.009.001"
+        "80.090.006.000",
+        "80.090.005.999",
+        "80.090.006.001",
+        "80.090.006.010"
       ],
-      "corretta": 2,
+      "corretta": 0,
       "hint": "Attenzione ai gruppi: le parole \"mila\", \"milioni\", \"miliardi\" indicano dove vanno le cifre.",
       "audience": [
-        17,
-        9,
-        70,
-        4
+        63,
+        12,
+        15,
+        10
       ],
-      "spiegazione": "\"trecentodue miliardi novemila\" si scrive 302.000.009.000."
+      "spiegazione": "\"ottanta miliardi novanta milioni seimila\" si scrive 80.090.006.000."
     },
     {
       "id": "L14-F-003",
       "livello": 14,
       "tipologia": "F",
       "fascia": "miliardi",
-      "numero": 1000082009,
+      "numero": 8080030000,
       "valoriPosizionali": [
-        "u",
-        "uk",
         "dak",
+        "daM",
         "uG"
       ],
-      "testo": "Qual è la notazione polinomiale di 1.000.082.009, includendo i termini con fattore zero?",
+      "testo": "Qual è la notazione polinomiale di 8.080.030.000, includendo i termini con fattore zero?",
       "opzioni": [
-        "(1×1.000.000.000)+(0×100.000.000)+(0×10.000.000)+(0×1.000.000)+(0×100.000)+(8×10.000)+(2×1000)+(0×100)+(0×10)+(9×1)",
-        "(2×1.000.000.000)+(0×100.000.000)+(0×10.000.000)+(0×1.000.000)+(0×100.000)+(8×10.000)+(2×1000)+(0×100)+(0×10)+(9×1)",
-        "(1×10.000.000.000)+(0×100.000.000)+(0×10.000.000)+(0×1.000.000)+(0×100.000)+(8×10.000)+(2×1000)+(0×100)+(0×10)+(9×1)",
-        "(1×1.000.000.000)+(0×100.000.000)+(0×10.000.000)+(0×1.000.000)+(0×100.000)+(8×100.000)+(2×1000)+(0×100)+(0×10)+(9×1)"
+        "(8×1.000.000.000)+(0×100.000.000)+(8×100.000.000)+(0×1.000.000)+(0×100.000)+(3×10.000)",
+        "(9×1.000.000.000)+(0×100.000.000)+(8×10.000.000)+(0×1.000.000)+(0×100.000)+(3×10.000)",
+        "(8×10.000.000.000)+(0×100.000.000)+(8×10.000.000)+(0×1.000.000)+(0×100.000)+(3×10.000)",
+        "(8×1.000.000.000)+(0×100.000.000)+(8×10.000.000)+(0×1.000.000)+(0×100.000)+(3×10.000)"
       ],
-      "corretta": 0,
+      "corretta": 3,
       "hint": "Ogni cifra va moltiplicata per la potenza di 10 della sua posizione.",
       "audience": [
-        76,
-        11,
+        10,
         5,
-        8
+        29,
+        56
       ],
-      "spiegazione": "1.000.082.009 = (1×1.000.000.000)+(0×100.000.000)+(0×10.000.000)+(0×1.000.000)+(0×100.000)+(8×10.000)+(2×1000)+(0×100)+(0×10)+(9×1)."
+      "spiegazione": "8.080.030.000 = (8×1.000.000.000)+(0×100.000.000)+(8×10.000.000)+(0×1.000.000)+(0×100.000)+(3×10.000)."
     },
     {
       "id": "L14-G-004",
       "livello": 14,
       "tipologia": "G",
       "fascia": "miliardi",
-      "numero": 9999999000,
+      "numero": 9999999900,
       "valoriPosizionali": [
+        "h",
         "uk",
         "dak",
         "hk",
@@ -4560,352 +4557,353 @@
         "hM",
         "uG"
       ],
-      "testo": "Quanto manca a 9.999.999.000 per raggiungere 10.000.000.000?",
+      "testo": "Quanto manca a 9.999.999.900 per raggiungere 10.000.000.000?",
       "opzioni": [
         "1000",
-        "2000",
         "100",
-        "10.000"
-      ],
-      "corretta": 0,
-      "hint": "Fai 10.000.000.000 − 9.999.999.000: completa prima le posizioni più piccole.",
-      "audience": [
-        58,
-        6,
-        24,
-        12
-      ],
-      "spiegazione": "10.000.000.000 − 9.999.999.000 = 1000."
-    },
-    {
-      "id": "L14-C-005",
-      "livello": 14,
-      "tipologia": "C",
-      "fascia": "miliardi",
-      "numero": 60700500000,
-      "valoriPosizionali": [
-        "daG",
-        "hM",
-        "hk"
-      ],
-      "testo": "Qual è la scomposizione per valori posizionali del numero 60.700.500.000?",
-      "opzioni": [
-        "7 hM + 6 daG + 4 hk",
-        "7 hM + 5 uM + 6 daG",
-        "7 hM + 6 daG + 5 hk",
-        "6 daG + 6 hk + 7 hM"
-      ],
-      "corretta": 2,
-      "hint": "Elenca le cifre non nulle, ciascuna con il codice del suo valore posizionale: l'ordine non conta, conta il valore.",
-      "audience": [
-        16,
-        14,
-        61,
-        9
-      ],
-      "spiegazione": "60.700.500.000 = 6 daG + 7 hM + 5 hk."
-    },
-    {
-      "id": "L14-D-006",
-      "livello": 14,
-      "tipologia": "D",
-      "fascia": "miliardi",
-      "numero": 77300003000,
-      "valoriPosizionali": [
-        "uk",
-        "hM",
-        "uG",
-        "daG"
-      ],
-      "testo": "Come si scrive in lettere il numero 77.300.003.000?",
-      "opzioni": [
-        "settantasette miliardi trecento milioni tremila",
-        "settantasette miliardi trecento milioni duemilanovecentonovantanove",
-        "settantasette miliardi trecento milioni tremilauno",
-        "settantasette miliardi trecento milioni tremiladieci"
-      ],
-      "corretta": 0,
-      "hint": "Leggi il numero a gruppi: prima i miliardi/milioni, poi le migliaia (\"mila\"), poi il resto.",
-      "audience": [
-        66,
-        18,
-        5,
-        11
-      ],
-      "spiegazione": "77.300.003.000 si scrive \"settantasette miliardi trecento milioni tremila\"."
-    },
-    {
-      "id": "L14-F-007",
-      "livello": 14,
-      "tipologia": "F",
-      "fascia": "miliardi",
-      "numero": 7060090504,
-      "valoriPosizionali": [
-        "u",
-        "h",
-        "dak",
-        "daM",
-        "uG"
-      ],
-      "testo": "Qual è la notazione polinomiale di 7.060.090.504?",
-      "opzioni": [
-        "(7×1.000.000.000)+(6×10.000.000)+(9×10.000)+(5×100)+(4×1)",
-        "(7×1.000.000.000)+(6×100.000.000)+(9×10.000)+(5×100)+(4×1)",
-        "(7×10.000.000.000)+(6×10.000.000)+(9×10.000)+(5×100)+(4×1)",
-        "(8×1.000.000.000)+(6×10.000.000)+(9×10.000)+(5×100)+(4×1)"
-      ],
-      "corretta": 0,
-      "hint": "Ogni cifra va moltiplicata per la potenza di 10 della sua posizione.",
-      "audience": [
-        77,
-        10,
-        9,
-        4
-      ],
-      "spiegazione": "7.060.090.504 = (7×1.000.000.000)+(6×10.000.000)+(9×10.000)+(5×100)+(4×1)."
-    },
-    {
-      "id": "L14-G-008",
-      "livello": 14,
-      "tipologia": "G",
-      "fascia": "miliardi",
-      "numero": 9999999990,
-      "valoriPosizionali": [
-        "da",
-        "h",
-        "uk",
-        "dak",
-        "hk",
-        "uM",
-        "daM",
-        "hM",
-        "uG"
-      ],
-      "testo": "Quanto manca a 9.999.999.990 per raggiungere 10.000.000.000?",
-      "opzioni": [
-        "100",
-        "20",
-        "10",
-        "1"
-      ],
-      "corretta": 2,
-      "hint": "Fai 10.000.000.000 − 9.999.999.990: completa prima le posizioni più piccole.",
-      "audience": [
-        17,
-        5,
-        66,
-        12
-      ],
-      "spiegazione": "10.000.000.000 − 9.999.999.990 = 10."
-    },
-    {
-      "id": "L14-C-009",
-      "livello": 14,
-      "tipologia": "C",
-      "fascia": "miliardi",
-      "numero": 3300010000,
-      "valoriPosizionali": [
-        "uG",
-        "hM",
-        "dak"
-      ],
-      "testo": "Qual è la scomposizione per valori posizionali del numero 3.300.010.000?",
-      "opzioni": [
-        "3 uG + 2 dak + 3 hM",
-        "3 hM + 1 dak + 3 uG",
-        "1 uk + 3 hM + 3 uG",
-        "1 hk + 3 hM + 3 uG"
+        "200",
+        "10"
       ],
       "corretta": 1,
-      "hint": "Elenca le cifre non nulle, ciascuna con il codice del suo valore posizionale: l'ordine non conta, conta il valore.",
+      "hint": "Fai 10.000.000.000 − 9.999.999.900: completa prima le posizioni più piccole.",
       "audience": [
-        12,
-        66,
-        12,
-        10
+        8,
+        77,
+        11,
+        4
       ],
-      "spiegazione": "3.300.010.000 = 3 uG + 3 hM + 1 dak."
+      "spiegazione": "10.000.000.000 − 9.999.999.900 = 100."
     },
     {
-      "id": "L14-D-010",
+      "id": "L14-H-005",
+      "livello": 14,
+      "tipologia": "H",
+      "fascia": "miliardi",
+      "numero": 810000098000,
+      "valoriPosizionali": [
+        "uk",
+        "dak",
+        "daG",
+        "hG"
+      ],
+      "testo": "Qual è la scomposizione polinomiale di 810.000.098.000 con le potenze del 10, includendo i termini con fattore zero?",
+      "opzioni": [
+        "9×10¹¹ + 1×10¹⁰ + 0×10⁹ + 0×10⁸ + 0×10⁷ + 0×10⁶ + 0×10⁵ + 9×10⁴ + 8×10³",
+        "8×10¹⁰ + 1×10¹⁰ + 0×10⁹ + 0×10⁸ + 0×10⁷ + 0×10⁶ + 0×10⁵ + 9×10⁴ + 8×10³",
+        "8×10¹¹ + 1×10¹¹ + 0×10⁹ + 0×10⁸ + 0×10⁷ + 0×10⁶ + 0×10⁵ + 9×10⁴ + 8×10³",
+        "8×10¹¹ + 1×10¹⁰ + 0×10⁹ + 0×10⁸ + 0×10⁷ + 0×10⁶ + 0×10⁵ + 9×10⁴ + 8×10³"
+      ],
+      "corretta": 3,
+      "hint": "Ogni cifra va moltiplicata per la potenza di 10 della sua posizione (10⁰ = 1).",
+      "audience": [
+        9,
+        12,
+        8,
+        71
+      ],
+      "spiegazione": "810.000.098.000 = 8×10¹¹ + 1×10¹⁰ + 0×10⁹ + 0×10⁸ + 0×10⁷ + 0×10⁶ + 0×10⁵ + 9×10⁴ + 8×10³."
+    },
+    {
+      "id": "L14-C-006",
+      "livello": 14,
+      "tipologia": "C",
+      "fascia": "miliardi",
+      "numero": 600100070083,
+      "valoriPosizionali": [
+        "hG",
+        "hM",
+        "dak",
+        "da",
+        "u"
+      ],
+      "testo": "Qual è la scomposizione per valori posizionali del numero 600.100.070.083?",
+      "opzioni": [
+        "7 dak + 8 da + 6 hG + 3 u + 1 hM",
+        "1 hM + 8 da + 4 u + 6 hG + 7 dak",
+        "1 hM + 2 u + 6 hG + 7 dak + 8 da",
+        "3 u + 9 da + 1 hM + 7 dak + 6 hG"
+      ],
+      "corretta": 0,
+      "hint": "Elenca le cifre non nulle, ciascuna con il codice del suo valore posizionale: l'ordine non conta, conta il valore.",
+      "audience": [
+        73,
+        8,
+        9,
+        10
+      ],
+      "spiegazione": "600.100.070.083 = 6 hG + 1 hM + 7 dak + 8 da + 3 u."
+    },
+    {
+      "id": "L14-D-007",
       "livello": 14,
       "tipologia": "D",
       "fascia": "miliardi",
-      "numero": 400060080300,
+      "numero": 5600000002,
       "valoriPosizionali": [
-        "h",
-        "dak",
-        "daM",
-        "hG"
+        "u",
+        "hM",
+        "uG"
       ],
-      "testo": "Scrivi in cifre: \"quattrocento miliardi sessanta milioni ottantamilatrecento\".",
+      "testo": "Scrivi in cifre: \"cinque miliardi seicento milioni due\".",
       "opzioni": [
-        "400.060.080.300",
-        "400.060.080.310",
-        "400.060.080.299",
-        "400.060.080.301"
+        "5.600.000.001",
+        "5.600.000.003",
+        "5.600.000.002",
+        "5.600.000.012"
       ],
-      "corretta": 0,
+      "corretta": 2,
       "hint": "Attenzione ai gruppi: le parole \"mila\", \"milioni\", \"miliardi\" indicano dove vanno le cifre.",
       "audience": [
-        67,
-        8,
-        10,
+        19,
+        7,
+        59,
         15
       ],
-      "spiegazione": "\"quattrocento miliardi sessanta milioni ottantamilatrecento\" si scrive 400.060.080.300."
+      "spiegazione": "\"cinque miliardi seicento milioni due\" si scrive 5.600.000.002."
     },
     {
-      "id": "L14-F-011",
+      "id": "L14-F-008",
       "livello": 14,
       "tipologia": "F",
       "fascia": "miliardi",
-      "numero": 3007070000,
+      "numero": 930000900008,
       "valoriPosizionali": [
-        "dak",
-        "uM",
-        "uG"
+        "u",
+        "hk",
+        "daG",
+        "hG"
       ],
-      "testo": "Qual è la notazione polinomiale di 3.007.070.000?",
+      "testo": "Qual è la notazione polinomiale di 930.000.900.008?",
       "opzioni": [
-        "(3×1.000.000.000)+(7×1.000.000)+(7×10.000)",
-        "(4×1.000.000.000)+(7×1.000.000)+(7×10.000)",
-        "(3×10.000.000.000)+(7×1.000.000)+(7×10.000)",
-        "(3×1.000.000.000)+(7×10.000.000)+(7×10.000)"
+        "(9×100.000.000.000)+(3×10.000.000.000)+(9×100.000)+(8×1)",
+        "(9×1.000.000.000.000)+(3×10.000.000.000)+(9×100.000)+(8×1)",
+        "(8×100.000.000.000)+(3×10.000.000.000)+(9×100.000)+(8×1)",
+        "(9×100.000.000.000)+(3×100.000.000.000)+(9×100.000)+(8×1)"
       ],
       "corretta": 0,
       "hint": "Ogni cifra va moltiplicata per la potenza di 10 della sua posizione.",
       "audience": [
         57,
-        12,
-        11,
-        20
+        17,
+        19,
+        7
       ],
-      "spiegazione": "3.007.070.000 = (3×1.000.000.000)+(7×1.000.000)+(7×10.000)."
+      "spiegazione": "930.000.900.008 = (9×100.000.000.000)+(3×10.000.000.000)+(9×100.000)+(8×1)."
     },
     {
-      "id": "L14-G-012",
+      "id": "L14-G-009",
       "livello": 14,
       "tipologia": "G",
       "fascia": "miliardi",
-      "numero": 9999900000,
+      "numero": 9999998500,
       "valoriPosizionali": [
+        "h",
+        "uk",
+        "dak",
         "hk",
         "uM",
         "daM",
         "hM",
         "uG"
       ],
-      "testo": "Quanto manca a 9.999.900.000 per raggiungere 10.000.000.000?",
+      "testo": "Quanto manca a 9.999.998.500 per raggiungere 10.000.000.000?",
       "opzioni": [
-        "200.000",
-        "10.000",
-        "1.000.000",
-        "100.000"
+        "150",
+        "3000",
+        "15.000",
+        "1500"
       ],
       "corretta": 3,
-      "hint": "Fai 10.000.000.000 − 9.999.900.000: completa prima le posizioni più piccole.",
+      "hint": "Fai 10.000.000.000 − 9.999.998.500: completa prima le posizioni più piccole.",
+      "audience": [
+        7,
+        6,
+        15,
+        72
+      ],
+      "spiegazione": "10.000.000.000 − 9.999.998.500 = 1500."
+    },
+    {
+      "id": "L14-H-010",
+      "livello": 14,
+      "tipologia": "H",
+      "fascia": "miliardi",
+      "numero": 51000560700,
+      "valoriPosizionali": [
+        "h",
+        "dak",
+        "hk",
+        "uG",
+        "daG"
+      ],
+      "testo": "Qual è la scomposizione polinomiale di 51.000.560.700 con le potenze del 10, includendo i termini con fattore zero?",
+      "opzioni": [
+        "6×10¹⁰ + 1×10⁹ + 0×10⁸ + 0×10⁷ + 0×10⁶ + 5×10⁵ + 6×10⁴ + 0×10³ + 7×10²",
+        "5×10¹¹ + 1×10⁹ + 0×10⁸ + 0×10⁷ + 0×10⁶ + 5×10⁵ + 6×10⁴ + 0×10³ + 7×10²",
+        "5×10⁹ + 1×10⁹ + 0×10⁸ + 0×10⁷ + 0×10⁶ + 5×10⁵ + 6×10⁴ + 0×10³ + 7×10²",
+        "5×10¹⁰ + 1×10⁹ + 0×10⁸ + 0×10⁷ + 0×10⁶ + 5×10⁵ + 6×10⁴ + 0×10³ + 7×10²"
+      ],
+      "corretta": 3,
+      "hint": "Ogni cifra va moltiplicata per la potenza di 10 della sua posizione (10⁰ = 1).",
+      "audience": [
+        14,
+        6,
+        16,
+        64
+      ],
+      "spiegazione": "51.000.560.700 = 5×10¹⁰ + 1×10⁹ + 0×10⁸ + 0×10⁷ + 0×10⁶ + 5×10⁵ + 6×10⁴ + 0×10³ + 7×10²."
+    },
+    {
+      "id": "L14-C-011",
+      "livello": 14,
+      "tipologia": "C",
+      "fascia": "miliardi",
+      "numero": 39800900000,
+      "valoriPosizionali": [
+        "daG",
+        "uG",
+        "hM",
+        "hk"
+      ],
+      "testo": "Qual è la scomposizione per valori posizionali del numero 39.800.900.000?",
+      "opzioni": [
+        "8 hM + 9 dak + 9 uG + 3 daG",
+        "8 hM + 9 hk + 3 daG + 9 uG",
+        "9 uG + 9 uM + 8 hM + 3 daG",
+        "3 daG + 8 hk + 8 hM + 9 uG"
+      ],
+      "corretta": 1,
+      "hint": "Elenca le cifre non nulle, ciascuna con il codice del suo valore posizionale: l'ordine non conta, conta il valore.",
+      "audience": [
+        9,
+        71,
+        12,
+        8
+      ],
+      "spiegazione": "39.800.900.000 = 3 daG + 9 uG + 8 hM + 9 hk."
+    },
+    {
+      "id": "L14-D-012",
+      "livello": 14,
+      "tipologia": "D",
+      "fascia": "miliardi",
+      "numero": 7040000104,
+      "valoriPosizionali": [
+        "u",
+        "h",
+        "daM",
+        "uG"
+      ],
+      "testo": "Come si scrive in lettere il numero 7.040.000.104?",
+      "opzioni": [
+        "sette miliardi quaranta milioni centocinque",
+        "sette miliardi quaranta milioni centotre",
+        "sette miliardi quaranta milioni centoquattro",
+        "sette miliardi quaranta milioni centoquattordici"
+      ],
+      "corretta": 2,
+      "hint": "Leggi il numero a gruppi: prima i miliardi/milioni, poi le migliaia (\"mila\"), poi il resto.",
       "audience": [
         10,
-        7,
-        9,
-        74
+        18,
+        57,
+        15
       ],
-      "spiegazione": "10.000.000.000 − 9.999.900.000 = 100.000."
+      "spiegazione": "7.040.000.104 si scrive \"sette miliardi quaranta milioni centoquattro\"."
     },
     {
       "id": "L15-C-001",
       "livello": 15,
       "tipologia": "C",
       "fascia": "miliardi",
-      "numero": 1000010073,
+      "numero": 8030303000,
       "valoriPosizionali": [
         "uG",
-        "dak",
-        "da",
-        "u"
+        "daM",
+        "hk",
+        "uk"
       ],
-      "testo": "Qual è la scomposizione per valori posizionali del numero 1.000.010.073?",
+      "testo": "Qual è la scomposizione per valori posizionali del numero 8.030.303.000?",
       "opzioni": [
-        "7 da + 1 uG + 2 u + 1 dak",
-        "4 u + 1 dak + 1 uG + 7 da",
-        "7 da + 1 uG + 3 u + 1 dak",
-        "1 uG + 8 da + 3 u + 1 dak"
+        "3 uk + 3 daM + 8 uG + 3 hk",
+        "3 daM + 8 uG + 2 uk + 3 hk",
+        "3 daM + 8 uG + 4 uk + 3 hk",
+        "3 dak + 3 daM + 3 hk + 8 uG"
       ],
-      "corretta": 2,
+      "corretta": 0,
       "hint": "Elenca le cifre non nulle, ciascuna con il codice del suo valore posizionale: l'ordine non conta, conta il valore.",
       "audience": [
-        15,
-        10,
-        58,
-        17
+        61,
+        16,
+        12,
+        11
       ],
-      "spiegazione": "1.000.010.073 = 1 uG + 1 dak + 7 da + 3 u."
+      "spiegazione": "8.030.303.000 = 8 uG + 3 daM + 3 hk + 3 uk."
     },
     {
       "id": "L15-D-002",
       "livello": 15,
       "tipologia": "D",
       "fascia": "miliardi",
-      "numero": 20300005000,
+      "numero": 20000030100,
       "valoriPosizionali": [
-        "uk",
-        "hM",
+        "h",
+        "dak",
         "daG"
       ],
-      "testo": "Come si scrive in lettere il numero 20.300.005.000?",
+      "testo": "Scrivi in cifre: \"venti miliardi trentamilacento\".",
       "opzioni": [
-        "venti miliardi trecento milioni cinquemilauno",
-        "venti miliardi trecento milioni cinquemila",
-        "venti miliardi trecento milioni cinquemiladieci",
-        "venti miliardi trecento milioni quattromilanovecentonovantanove"
+        "20.000.030.110",
+        "20.000.030.100",
+        "20.000.030.101",
+        "20.000.030.099"
       ],
       "corretta": 1,
-      "hint": "Leggi il numero a gruppi: prima i miliardi/milioni, poi le migliaia (\"mila\"), poi il resto.",
+      "hint": "Attenzione ai gruppi: le parole \"mila\", \"milioni\", \"miliardi\" indicano dove vanno le cifre.",
       "audience": [
-        12,
-        69,
-        13,
-        6
+        9,
+        59,
+        23,
+        9
       ],
-      "spiegazione": "20.300.005.000 si scrive \"venti miliardi trecento milioni cinquemila\"."
+      "spiegazione": "\"venti miliardi trentamilacento\" si scrive 20.000.030.100."
     },
     {
       "id": "L15-F-003",
       "livello": 15,
       "tipologia": "F",
       "fascia": "miliardi",
-      "numero": 890000030010,
+      "numero": 1200000009,
       "valoriPosizionali": [
-        "da",
-        "dak",
-        "daG",
-        "hG"
+        "u",
+        "hM",
+        "uG"
       ],
-      "testo": "Qual è la notazione polinomiale di 890.000.030.010, includendo i termini con fattore zero?",
+      "testo": "Qual è la notazione polinomiale di 1.200.000.009, includendo i termini con fattore zero?",
       "opzioni": [
-        "(8×100.000.000.000)+(9×10.000.000.000)+(0×1.000.000.000)+(0×100.000.000)+(0×10.000.000)+(0×1.000.000)+(0×100.000)+(3×10.000)+(0×1000)+(0×100)+(1×10)",
-        "(8×1.000.000.000.000)+(9×10.000.000.000)+(0×1.000.000.000)+(0×100.000.000)+(0×10.000.000)+(0×1.000.000)+(0×100.000)+(3×10.000)+(0×1000)+(0×100)+(1×10)",
-        "(9×100.000.000.000)+(9×10.000.000.000)+(0×1.000.000.000)+(0×100.000.000)+(0×10.000.000)+(0×1.000.000)+(0×100.000)+(3×10.000)+(0×1000)+(0×100)+(1×10)",
-        "(8×100.000.000.000)+(9×100.000.000.000)+(0×1.000.000.000)+(0×100.000.000)+(0×10.000.000)+(0×1.000.000)+(0×100.000)+(3×10.000)+(0×1000)+(0×100)+(1×10)"
+        "(1×1.000.000.000)+(2×100.000.000)+(0×10.000.000)+(0×1.000.000)+(0×100.000)+(0×10.000)+(0×1000)+(0×100)+(0×10)+(9×1)",
+        "(2×1.000.000.000)+(2×100.000.000)+(0×10.000.000)+(0×1.000.000)+(0×100.000)+(0×10.000)+(0×1000)+(0×100)+(0×10)+(9×1)",
+        "(1×1.000.000.000)+(2×1.000.000.000)+(0×10.000.000)+(0×1.000.000)+(0×100.000)+(0×10.000)+(0×1000)+(0×100)+(0×10)+(9×1)",
+        "(1×10.000.000.000)+(2×100.000.000)+(0×10.000.000)+(0×1.000.000)+(0×100.000)+(0×10.000)+(0×1000)+(0×100)+(0×10)+(9×1)"
       ],
       "corretta": 0,
       "hint": "Ogni cifra va moltiplicata per la potenza di 10 della sua posizione.",
       "audience": [
-        71,
-        12,
-        7,
-        10
+        58,
+        9,
+        19,
+        14
       ],
-      "spiegazione": "890.000.030.010 = (8×100.000.000.000)+(9×10.000.000.000)+(0×1.000.000.000)+(0×100.000.000)+(0×10.000.000)+(0×1.000.000)+(0×100.000)+(3×10.000)+(0×1000)+(0×100)+(1×10)."
+      "spiegazione": "1.200.000.009 = (1×1.000.000.000)+(2×100.000.000)+(0×10.000.000)+(0×1.000.000)+(0×100.000)+(0×10.000)+(0×1000)+(0×100)+(0×10)+(9×1)."
     },
     {
       "id": "L15-G-004",
       "livello": 15,
       "tipologia": "G",
       "fascia": "miliardi",
-      "numero": 9999999000,
+      "numero": 9999999700,
       "valoriPosizionali": [
+        "h",
         "uk",
         "dak",
         "hk",
@@ -4914,260 +4912,254 @@
         "hM",
         "uG"
       ],
-      "testo": "Quanto manca a 9.999.999.000 per raggiungere 10.000.000.000?",
+      "testo": "Quanto manca a 9.999.999.700 per raggiungere 10.000.000.000?",
       "opzioni": [
-        "100",
-        "10.000",
-        "2000",
-        "1000"
+        "3000",
+        "300",
+        "600",
+        "30"
       ],
-      "corretta": 3,
-      "hint": "Fai 10.000.000.000 − 9.999.999.000: completa prima le posizioni più piccole.",
-      "audience": [
-        6,
-        12,
-        16,
-        66
-      ],
-      "spiegazione": "10.000.000.000 − 9.999.999.000 = 1000."
-    },
-    {
-      "id": "L15-C-005",
-      "livello": 15,
-      "tipologia": "C",
-      "fascia": "miliardi",
-      "numero": 200000000360,
-      "valoriPosizionali": [
-        "hG",
-        "h",
-        "da"
-      ],
-      "testo": "Qual è la scomposizione per valori posizionali del numero 200.000.000.360?",
-      "opzioni": [
-        "3 h + 2 hG + 6 da",
-        "3 h + 6 u + 2 hG",
-        "2 hG + 3 h + 7 da",
-        "2 hG + 5 da + 3 h"
-      ],
-      "corretta": 0,
-      "hint": "Elenca le cifre non nulle, ciascuna con il codice del suo valore posizionale: l'ordine non conta, conta il valore.",
-      "audience": [
-        67,
-        8,
-        13,
-        12
-      ],
-      "spiegazione": "200.000.000.360 = 2 hG + 3 h + 6 da."
-    },
-    {
-      "id": "L15-D-006",
-      "livello": 15,
-      "tipologia": "D",
-      "fascia": "miliardi",
-      "numero": 8400001005,
-      "valoriPosizionali": [
-        "u",
-        "uk",
-        "hM",
-        "uG"
-      ],
-      "testo": "Come si scrive in lettere il numero 8.400.001.005?",
-      "opzioni": [
-        "otto miliardi quattrocento milioni millesei",
-        "otto miliardi quattrocento milioni millequattro",
-        "otto miliardi quattrocento milioni millecinque",
-        "otto miliardi quattrocento milioni millequindici"
-      ],
-      "corretta": 2,
-      "hint": "Leggi il numero a gruppi: prima i miliardi/milioni, poi le migliaia (\"mila\"), poi il resto.",
+      "corretta": 1,
+      "hint": "Fai 10.000.000.000 − 9.999.999.700: completa prima le posizioni più piccole.",
       "audience": [
         7,
-        11,
         71,
+        11,
         11
       ],
-      "spiegazione": "8.400.001.005 si scrive \"otto miliardi quattrocento milioni millecinque\"."
+      "spiegazione": "10.000.000.000 − 9.999.999.700 = 300."
     },
     {
-      "id": "L15-F-007",
+      "id": "L15-H-005",
       "livello": 15,
-      "tipologia": "F",
+      "tipologia": "H",
       "fascia": "miliardi",
-      "numero": 72030035000,
-      "valoriPosizionali": [
-        "uk",
-        "dak",
-        "daM",
-        "uG",
-        "daG"
-      ],
-      "testo": "Qual è la notazione polinomiale di 72.030.035.000, includendo i termini con fattore zero?",
-      "opzioni": [
-        "(7×100.000.000.000)+(2×1.000.000.000)+(0×100.000.000)+(3×10.000.000)+(0×1.000.000)+(0×100.000)+(3×10.000)+(5×1000)",
-        "(8×10.000.000.000)+(2×1.000.000.000)+(0×100.000.000)+(3×10.000.000)+(0×1.000.000)+(0×100.000)+(3×10.000)+(5×1000)",
-        "(7×10.000.000.000)+(2×10.000.000.000)+(0×100.000.000)+(3×10.000.000)+(0×1.000.000)+(0×100.000)+(3×10.000)+(5×1000)",
-        "(7×10.000.000.000)+(2×1.000.000.000)+(0×100.000.000)+(3×10.000.000)+(0×1.000.000)+(0×100.000)+(3×10.000)+(5×1000)"
-      ],
-      "corretta": 3,
-      "hint": "Ogni cifra va moltiplicata per la potenza di 10 della sua posizione.",
-      "audience": [
-        15,
-        4,
-        18,
-        63
-      ],
-      "spiegazione": "72.030.035.000 = (7×10.000.000.000)+(2×1.000.000.000)+(0×100.000.000)+(3×10.000.000)+(0×1.000.000)+(0×100.000)+(3×10.000)+(5×1000)."
-    },
-    {
-      "id": "L15-G-008",
-      "livello": 15,
-      "tipologia": "G",
-      "fascia": "miliardi",
-      "numero": 9999999500,
-      "valoriPosizionali": [
-        "h",
-        "uk",
-        "dak",
-        "hk",
-        "uM",
-        "daM",
-        "hM",
-        "uG"
-      ],
-      "testo": "Quanto manca a 9.999.999.500 per raggiungere 10.000.000.000?",
-      "opzioni": [
-        "500",
-        "50",
-        "5000",
-        "1000"
-      ],
-      "corretta": 0,
-      "hint": "Fai 10.000.000.000 − 9.999.999.500: completa prima le posizioni più piccole.",
-      "audience": [
-        59,
-        23,
-        10,
-        8
-      ],
-      "spiegazione": "10.000.000.000 − 9.999.999.500 = 500."
-    },
-    {
-      "id": "L15-C-009",
-      "livello": 15,
-      "tipologia": "C",
-      "fascia": "miliardi",
-      "numero": 7050018800,
-      "valoriPosizionali": [
-        "uG",
-        "daM",
-        "dak",
-        "uk",
-        "h"
-      ],
-      "testo": "Qual è la scomposizione per valori posizionali del numero 7.050.018.800?",
-      "opzioni": [
-        "7 h + 5 daM + 1 dak + 8 uk + 7 uG",
-        "7 uG + 5 daM + 1 dak + 8 uk + 8 h",
-        "1 dak + 7 uG + 5 daM + 8 uk + 9 h",
-        "1 dak + 7 uG + 8 uk + 5 daM + 8 da"
-      ],
-      "corretta": 1,
-      "hint": "Elenca le cifre non nulle, ciascuna con il codice del suo valore posizionale: l'ordine non conta, conta il valore.",
-      "audience": [
-        7,
-        65,
-        13,
-        15
-      ],
-      "spiegazione": "7.050.018.800 = 7 uG + 5 daM + 1 dak + 8 uk + 8 h."
-    },
-    {
-      "id": "L15-D-010",
-      "livello": 15,
-      "tipologia": "D",
-      "fascia": "miliardi",
-      "numero": 600401000002,
-      "valoriPosizionali": [
-        "u",
-        "uM",
-        "hM",
-        "hG"
-      ],
-      "testo": "Come si scrive in lettere il numero 600.401.000.002?",
-      "opzioni": [
-        "seicento miliardi quattrocentoun milioni dodici",
-        "seicento miliardi quattrocentoun milioni due",
-        "seicento miliardi quattrocentoun milioni tre",
-        "seicento miliardi quattrocentoun milioni uno"
-      ],
-      "corretta": 1,
-      "hint": "Leggi il numero a gruppi: prima i miliardi/milioni, poi le migliaia (\"mila\"), poi il resto.",
-      "audience": [
-        9,
-        57,
-        14,
-        20
-      ],
-      "spiegazione": "600.401.000.002 si scrive \"seicento miliardi quattrocentoun milioni due\"."
-    },
-    {
-      "id": "L15-F-011",
-      "livello": 15,
-      "tipologia": "F",
-      "fascia": "miliardi",
-      "numero": 700040000030,
+      "numero": 90209000070,
       "valoriPosizionali": [
         "da",
-        "daM",
+        "uM",
+        "hM",
+        "daG"
+      ],
+      "testo": "Qual è la scomposizione polinomiale di 90.209.000.070 con le potenze del 10?",
+      "opzioni": [
+        "9×10¹¹ + 2×10⁸ + 9×10⁶ + 7×10¹",
+        "9×10¹⁰ + 2×10⁸ + 9×10⁶ + 7×10¹",
+        "8×10¹⁰ + 2×10⁸ + 9×10⁶ + 7×10¹",
+        "9×10⁹ + 2×10⁸ + 9×10⁶ + 7×10¹"
+      ],
+      "corretta": 1,
+      "hint": "Ogni cifra va moltiplicata per la potenza di 10 della sua posizione (10⁰ = 1).",
+      "audience": [
+        13,
+        67,
+        7,
+        13
+      ],
+      "spiegazione": "90.209.000.070 = 9×10¹⁰ + 2×10⁸ + 9×10⁶ + 7×10¹."
+    },
+    {
+      "id": "L15-C-006",
+      "livello": 15,
+      "tipologia": "C",
+      "fascia": "miliardi",
+      "numero": 65500010020,
+      "valoriPosizionali": [
+        "daG",
+        "uG",
+        "hM",
+        "dak",
+        "da"
+      ],
+      "testo": "Qual è la scomposizione per valori posizionali del numero 65.500.010.020?",
+      "opzioni": [
+        "5 uG + 6 daG + 3 da + 1 dak + 5 hM",
+        "5 uG + 1 dak + 5 hM + 1 da + 6 daG",
+        "5 uG + 5 hM + 6 daG + 2 h + 1 dak",
+        "2 da + 6 daG + 1 dak + 5 uG + 5 hM"
+      ],
+      "corretta": 3,
+      "hint": "Elenca le cifre non nulle, ciascuna con il codice del suo valore posizionale: l'ordine non conta, conta il valore.",
+      "audience": [
+        4,
+        16,
+        7,
+        73
+      ],
+      "spiegazione": "65.500.010.020 = 6 daG + 5 uG + 5 hM + 1 dak + 2 da."
+    },
+    {
+      "id": "L15-D-007",
+      "livello": 15,
+      "tipologia": "D",
+      "fascia": "miliardi",
+      "numero": 400000085000,
+      "valoriPosizionali": [
+        "uk",
+        "dak",
         "hG"
       ],
-      "testo": "Qual è la notazione polinomiale di 700.040.000.030, includendo i termini con fattore zero?",
+      "testo": "Scrivi in cifre: \"quattrocento miliardi ottantacinquemila\".",
       "opzioni": [
-        "(8×100.000.000.000)+(0×10.000.000.000)+(0×1.000.000.000)+(0×100.000.000)+(4×10.000.000)+(0×1.000.000)+(0×100.000)+(0×10.000)+(0×1000)+(0×100)+(3×10)",
-        "(7×1.000.000.000.000)+(0×10.000.000.000)+(0×1.000.000.000)+(0×100.000.000)+(4×10.000.000)+(0×1.000.000)+(0×100.000)+(0×10.000)+(0×1000)+(0×100)+(3×10)",
-        "(7×100.000.000.000)+(0×10.000.000.000)+(0×1.000.000.000)+(0×100.000.000)+(4×10.000.000)+(0×1.000.000)+(0×100.000)+(0×10.000)+(0×1000)+(0×100)+(3×10)",
-        "(7×100.000.000.000)+(0×10.000.000.000)+(0×1.000.000.000)+(0×100.000.000)+(4×100.000.000)+(0×1.000.000)+(0×100.000)+(0×10.000)+(0×1000)+(0×100)+(3×10)"
+        "400.000.084.999",
+        "400.000.085.010",
+        "400.000.085.001",
+        "400.000.085.000"
+      ],
+      "corretta": 3,
+      "hint": "Attenzione ai gruppi: le parole \"mila\", \"milioni\", \"miliardi\" indicano dove vanno le cifre.",
+      "audience": [
+        4,
+        21,
+        18,
+        57
+      ],
+      "spiegazione": "\"quattrocento miliardi ottantacinquemila\" si scrive 400.000.085.000."
+    },
+    {
+      "id": "L15-F-008",
+      "livello": 15,
+      "tipologia": "F",
+      "fascia": "miliardi",
+      "numero": 50900000900,
+      "valoriPosizionali": [
+        "h",
+        "hM",
+        "daG"
+      ],
+      "testo": "Qual è la notazione polinomiale di 50.900.000.900, includendo i termini con fattore zero?",
+      "opzioni": [
+        "(6×10.000.000.000)+(0×1.000.000.000)+(9×100.000.000)+(0×10.000.000)+(0×1.000.000)+(0×100.000)+(0×10.000)+(0×1000)+(9×100)",
+        "(5×10.000.000.000)+(0×1.000.000.000)+(9×1.000.000.000)+(0×10.000.000)+(0×1.000.000)+(0×100.000)+(0×10.000)+(0×1000)+(9×100)",
+        "(5×10.000.000.000)+(0×1.000.000.000)+(9×100.000.000)+(0×10.000.000)+(0×1.000.000)+(0×100.000)+(0×10.000)+(0×1000)+(9×100)",
+        "(5×100.000.000.000)+(0×1.000.000.000)+(9×100.000.000)+(0×10.000.000)+(0×1.000.000)+(0×100.000)+(0×10.000)+(0×1000)+(9×100)"
       ],
       "corretta": 2,
       "hint": "Ogni cifra va moltiplicata per la potenza di 10 della sua posizione.",
       "audience": [
         8,
-        7,
+        12,
         74,
-        11
+        6
       ],
-      "spiegazione": "700.040.000.030 = (7×100.000.000.000)+(0×10.000.000.000)+(0×1.000.000.000)+(0×100.000.000)+(4×10.000.000)+(0×1.000.000)+(0×100.000)+(0×10.000)+(0×1000)+(0×100)+(3×10)."
+      "spiegazione": "50.900.000.900 = (5×10.000.000.000)+(0×1.000.000.000)+(9×100.000.000)+(0×10.000.000)+(0×1.000.000)+(0×100.000)+(0×10.000)+(0×1000)+(9×100)."
     },
     {
-      "id": "L15-G-012",
+      "id": "L15-G-009",
       "livello": 15,
       "tipologia": "G",
       "fascia": "miliardi",
-      "numero": 9999990000,
+      "numero": 9999500000,
       "valoriPosizionali": [
-        "dak",
         "hk",
         "uM",
         "daM",
         "hM",
         "uG"
       ],
-      "testo": "Quanto manca a 9.999.990.000 per raggiungere 10.000.000.000?",
+      "testo": "Quanto manca a 9.999.500.000 per raggiungere 10.000.000.000?",
       "opzioni": [
-        "100.000",
-        "10.000",
-        "20.000",
-        "1000"
+        "50.000",
+        "5.000.000",
+        "1.000.000",
+        "500.000"
+      ],
+      "corretta": 3,
+      "hint": "Fai 10.000.000.000 − 9.999.500.000: completa prima le posizioni più piccole.",
+      "audience": [
+        9,
+        6,
+        7,
+        78
+      ],
+      "spiegazione": "10.000.000.000 − 9.999.500.000 = 500.000."
+    },
+    {
+      "id": "L15-H-010",
+      "livello": 15,
+      "tipologia": "H",
+      "fascia": "miliardi",
+      "numero": 805000008000,
+      "valoriPosizionali": [
+        "uk",
+        "uG",
+        "hG"
+      ],
+      "testo": "Qual è la scomposizione polinomiale di 805.000.008.000 con le potenze del 10?",
+      "opzioni": [
+        "8×10¹⁰ + 5×10⁹ + 8×10³",
+        "8×10¹¹ + 5×10¹⁰ + 8×10³",
+        "9×10¹¹ + 5×10⁹ + 8×10³",
+        "8×10¹¹ + 5×10⁹ + 8×10³"
+      ],
+      "corretta": 3,
+      "hint": "Ogni cifra va moltiplicata per la potenza di 10 della sua posizione (10⁰ = 1).",
+      "audience": [
+        11,
+        7,
+        4,
+        78
+      ],
+      "spiegazione": "805.000.008.000 = 8×10¹¹ + 5×10⁹ + 8×10³."
+    },
+    {
+      "id": "L15-C-011",
+      "livello": 15,
+      "tipologia": "C",
+      "fascia": "miliardi",
+      "numero": 870000700060,
+      "valoriPosizionali": [
+        "hG",
+        "daG",
+        "hk",
+        "da"
+      ],
+      "testo": "Qual è la scomposizione per valori posizionali del numero 870.000.700.060?",
+      "opzioni": [
+        "7 da + 7 hk + 7 daG + 8 hG",
+        "8 hG + 7 hk + 5 da + 7 daG",
+        "8 hG + 7 daG + 6 h + 7 hk",
+        "7 hk + 8 hG + 6 da + 7 daG"
+      ],
+      "corretta": 3,
+      "hint": "Elenca le cifre non nulle, ciascuna con il codice del suo valore posizionale: l'ordine non conta, conta il valore.",
+      "audience": [
+        19,
+        9,
+        14,
+        58
+      ],
+      "spiegazione": "870.000.700.060 = 8 hG + 7 daG + 7 hk + 6 da."
+    },
+    {
+      "id": "L15-D-012",
+      "livello": 15,
+      "tipologia": "D",
+      "fascia": "miliardi",
+      "numero": 500600003310,
+      "valoriPosizionali": [
+        "da",
+        "h",
+        "uk",
+        "hM",
+        "hG"
+      ],
+      "testo": "Scrivi in cifre: \"cinquecento miliardi seicento milioni tremilatrecentodieci\".",
+      "opzioni": [
+        "500.600.003.311",
+        "500.600.003.310",
+        "500.600.003.320",
+        "500.600.003.309"
       ],
       "corretta": 1,
-      "hint": "Fai 10.000.000.000 − 9.999.990.000: completa prima le posizioni più piccole.",
+      "hint": "Attenzione ai gruppi: le parole \"mila\", \"milioni\", \"miliardi\" indicano dove vanno le cifre.",
       "audience": [
         6,
         78,
         3,
         13
       ],
-      "spiegazione": "10.000.000.000 − 9.999.990.000 = 10.000."
+      "spiegazione": "\"cinquecento miliardi seicento milioni tremilatrecentodieci\" si scrive 500.600.003.310."
     }
   ]
 }

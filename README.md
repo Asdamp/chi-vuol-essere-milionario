@@ -3,7 +3,7 @@
 Gioco web per la scuola primaria (classe quinta) che consolida il **sistema di numerazione posizionale decimale** sui grandi numeri (migliaia, milioni, miliardi), ispirato al format *Chi vuol essere milionario?*.
 
 - **15 livelli** a difficoltà crescente, scala premi in €, traguardi (safe point) al livello 5 e 10.
-- **Banca di 180 domande** categorizzate per livello e tipologia (A–G), **randomizzate ad ogni partita**.
+- **Banca di 180 domande** categorizzate per livello e tipologia (A–H), **randomizzate ad ogni partita**.
 - **Tre aiuti** una tantum: 50:50, Pubblico, Chiamata a casa.
 - **Musica e suoni** royalty-free/CC0 (+ due brani CC-BY con credito).
 - Nessun timer; dopo ogni risposta una **spiegazione didattica**.
