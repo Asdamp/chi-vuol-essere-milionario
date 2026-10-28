@@ -22,12 +22,20 @@ let bgmNome = null;
 let muto = localStorage.getItem("cvm-muto") === "1";
 let avviato = false;
 
+// Override locale opzionale: se assets/audio/custom/<nome>.mp3 esiste (cartella esclusa da git)
+// viene usato al posto del file di default, altrimenti si ripiega sul default.
+const CUSTOM = "assets/audio/custom/";
+
 export function init() {
   for (const [nome, percorso] of Object.entries(FILE)) {
     const a = new Audio();
     a.preload = "auto";
-    a.addEventListener("error", () => { a.dataset.errore = "1"; });
-    a.src = percorso;
+    a.addEventListener("error", () => {
+      if (a.dataset.fallback) { a.dataset.errore = "1"; return; }
+      a.dataset.fallback = "1";
+      a.src = percorso;
+    });
+    a.src = CUSTOM + percorso.split("/").pop();
     elementi[nome] = a;
   }
 }

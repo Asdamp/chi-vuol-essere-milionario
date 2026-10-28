@@ -1,0 +1,10 @@
+Override audio locali (esclusi da git).
+
+Metti qui un file con lo stesso nome di uno in assets/audio/ e il gioco
+userà questo al posto del default:
+
+  intro.mp3  suspense.mp3  conferma.mp3  corretta.mp3
+  errata.mp3  aiuto.mp3  vittoria.mp3  game-over.mp3
+
+I file mancanti ripiegano automaticamente sul default.
+Non committare qui musica protetta da copyright.
